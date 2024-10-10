@@ -60,8 +60,8 @@
 				A3042BB22CB802100012E684 /* SceneDelegate.swift */,
 				A3042BB42CB802100012E684 /* ViewController.swift */,
 				A3042BB62CB802100012E684 /* Main.storyboard */,
-				A3042BB92CB802150012E684 /* Assets.xcassets */,
 				A3042BBB2CB802150012E684 /* LaunchScreen.storyboard */,
+				A3042BB92CB802150012E684 /* Assets.xcassets */,
 				A3042BBE2CB802150012E684 /* Info.plist */,
 			);
 			path = "35th-Sopt-Seminar";
