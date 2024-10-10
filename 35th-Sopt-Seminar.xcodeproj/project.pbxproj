@@ -13,6 +13,8 @@
 		A3042BB82CB802100012E684 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A3042BB72CB802100012E684 /* Base */; };
 		A3042BBA2CB802150012E684 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3042BB92CB802150012E684 /* Assets.xcassets */; };
 		A3042BBD2CB802150012E684 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A3042BBC2CB802150012E684 /* Base */; };
+		A3042BCE2CB80CD80012E684 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A3042BCD2CB80CD80012E684 /* SnapKit */; };
+		A3042BD12CB80CDF0012E684 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = A3042BD02CB80CDF0012E684 /* Then */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3042BCE2CB80CD80012E684 /* SnapKit in Frameworks */,
+				A3042BD12CB80CDF0012E684 /* Then in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +87,10 @@
 			dependencies = (
 			);
 			name = "35th-Sopt-Seminar";
+			packageProductDependencies = (
+				A3042BCD2CB80CD80012E684 /* SnapKit */,
+				A3042BD02CB80CDF0012E684 /* Then */,
+			);
 			productName = "35th-Sopt-Seminar";
 			productReference = A3042BAD2CB802100012E684 /* 35th-Sopt-Seminar.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,10 @@
 				Base,
 			);
 			mainGroup = A3042BA42CB8020F0012E684;
+			packageReferences = (
+				A3042BCC2CB80CD80012E684 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				A3042BCF2CB80CDF0012E684 /* XCRemoteSwiftPackageReference "Then" */,
+			);
 			productRefGroup = A3042BAE2CB802100012E684 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -363,6 +375,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A3042BCC2CB80CD80012E684 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		A3042BCF2CB80CDF0012E684 /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A3042BCD2CB80CD80012E684 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A3042BCC2CB80CD80012E684 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		A3042BD02CB80CDF0012E684 /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A3042BCF2CB80CDF0012E684 /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A3042BA52CB8020F0012E684 /* Project object */;
 }
