@@ -47,6 +47,11 @@ class ViewController: UIViewController {
         $0.textColor = .gray
     }
     
+    private let nicknameLabel = UILabel().then {
+        $0.text = "닉네임이 없어요!"
+        $0.textColor = .gray
+    }
+    
     private lazy var openButton = UIButton().then {
         $0.setTitle("열기", for: .normal)
         $0.titleLabel?.font = .systemFont(ofSize: 16, weight: .semibold)
@@ -110,6 +115,7 @@ class ViewController: UIViewController {
         detailViewController.dataBind(
             content: content
         )
+        detailViewController.delegate = self
         
         switch mode {
         case .navigation:
@@ -132,7 +138,15 @@ class ViewController: UIViewController {
 
 private extension ViewController {
     func setUI() {
-        [logoImage, titleLabel, subtitleLabel, modeLabel, openButton, modeButton, contentTextField].forEach {
+        [logoImage,
+         titleLabel,
+         subtitleLabel,
+         modeLabel,
+         nicknameLabel,
+         openButton,
+         modeButton,
+         contentTextField
+        ].forEach {
             $0.translatesAutoresizingMaskIntoConstraints = false
             self.view.addSubview($0)
         }
@@ -160,6 +174,11 @@ private extension ViewController {
             $0.centerX.equalToSuperview()
         }
         
+        nicknameLabel.snp.makeConstraints() {
+            $0.top.equalToSuperview().offset(352)
+            $0.centerX.equalToSuperview()
+        }
+        
         contentTextField.snp.makeConstraints() {
             $0.top.equalToSuperview().offset(280)
             $0.leading.trailing.equalToSuperview().inset(20)
@@ -178,5 +197,12 @@ private extension ViewController {
             $0.leading.trailing.equalToSuperview().inset(20)
             $0.height.equalTo(60)
         }
+    }
+}
+
+extension ViewController: NicknameDelegate {
+    func dataBind(nickname: String) {
+        guard !nickname.isEmpty else {return}
+        self.nicknameLabel.text = "\(nickname)님 환영해요!"
     }
 }
