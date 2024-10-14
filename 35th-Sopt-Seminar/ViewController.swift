@@ -17,15 +17,6 @@ enum transitionMode {
 class ViewController: UIViewController {
     
     private var mode: transitionMode = .navigation
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .white
-        
-        updateUI()
-        setUI()
-        setLayout()
-    }
     
     private let logoImage = UIImageView().then {
         $0.image = .imgSopt
@@ -81,6 +72,15 @@ class ViewController: UIViewController {
         let paddingRightView = UIView(frame: CGRect(x: 0, y: 0, width: 12, height: $0.frame.height))
         $0.rightView = paddingRightView
         $0.rightViewMode = .always
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .white
+        
+        updateUI()
+        setUI()
+        setLayout()
     }
 
     private func updateUI() {

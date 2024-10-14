@@ -13,15 +13,6 @@ final class DetailViewController: UIViewController {
     
     private var receivedContent: String?
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .white
-        view.addSubview(contentLabel)
-        
-        setUI()
-        setLayout()
-    }
-    
     private let titleLabel = UILabel().then {
         $0.text = "리뷰"
         $0.font = .systemFont(ofSize: 24, weight: .semibold)
@@ -29,6 +20,14 @@ final class DetailViewController: UIViewController {
     
     private let contentLabel = UILabel().then {
         $0.font = .systemFont(ofSize: 18, weight: .regular)
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .white
+        
+        setUI()
+        setLayout()
     }
     
     func dataBind(content: String) {
