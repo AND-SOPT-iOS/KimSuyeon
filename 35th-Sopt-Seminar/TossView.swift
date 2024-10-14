@@ -49,11 +49,39 @@ final class TossView: UIView {
     }
     
     // 새로운 소식 뷰
-    private let newsLabel = UILabel()
-    private let versionInfoLabel = UILabel()
-    private let versionHistoryLabel = UILabel()
-    private let lastUpdatedLabel = UILabel()
-    private let versionDetailLabel = UILabel()
+    private let newsLabel = UILabel().then {
+        $0.text = "새로운 소식"
+        $0.font = .systemFont(ofSize: 22, weight: .semibold)
+    }
+    
+    private let versionInfoLabel = UILabel().then {
+        $0.text = "버전 5.184.0"
+        $0.font = .systemFont(ofSize: 14, weight: .regular)
+        $0.textColor = .gray
+    }
+    
+    private let versionHistoryLabel = UILabel().then {
+        $0.text = "버전 기록"
+        $0.font = .systemFont(ofSize: 16, weight: .regular)
+        $0.textColor = .systemBlue
+    }
+    
+    private let lastUpdatedLabel = UILabel().then {
+        $0.text = "3일 전"
+        $0.font = .systemFont(ofSize: 14, weight: .regular)
+        $0.textColor = .gray
+    }
+    
+    private let versionDetailTextView = UITextView().then {
+        // TODO: 행간 적용
+        // TODO: 동적 높이 적용
+        
+        $0.text = "• 구석구석 숨어있던 버그들을 잡았어요. 또 다른 버그가 나타나면 토스 고객센터를 찾아주세요. 늘 열려있답니다. 365일 24시간 언제든지요."
+        $0.font = .systemFont(ofSize: 14, weight: .regular)
+        $0.textContainerInset = .zero  // 패딩 없앰
+        $0.textContainer.lineFragmentPadding = 0  // 좌우 여백 없앰
+        $0.isEditable = false
+    }
     
     // 미리 보기 뷰
     private let previewLabel = UILabel()
@@ -97,6 +125,11 @@ private extension TossView {
          subtitleLabel,
          openButton,
          shareButton,
+         newsLabel,
+         versionInfoLabel,
+         versionHistoryLabel,
+         lastUpdatedLabel,
+         versionDetailTextView,
          dummyView
         ].forEach {
             contentView.addSubview($0)
@@ -140,6 +173,33 @@ private extension TossView {
         shareButton.snp.makeConstraints() {
             $0.centerY.equalTo(openButton.snp.centerY)
             $0.trailing.equalToSuperview().offset(-20)
+        }
+        
+        newsLabel.snp.makeConstraints() {
+            $0.top.equalTo(logoImage.snp.bottom).offset(20)
+            $0.leading.equalToSuperview().offset(20)
+        }
+        
+        versionInfoLabel.snp.makeConstraints() {
+            $0.top.equalTo(newsLabel.snp.bottom).offset(4)
+            $0.leading.equalToSuperview().offset(20)
+        }
+        
+        versionHistoryLabel.snp.makeConstraints() {
+            $0.bottom.equalTo(newsLabel.snp.bottom)
+            $0.trailing.equalToSuperview().offset(-20)
+        }
+        
+        lastUpdatedLabel.snp.makeConstraints() {
+            $0.top.equalTo(versionHistoryLabel.snp.bottom).offset(4)
+            $0.trailing.equalToSuperview().offset(-20)
+        }
+        
+        versionDetailTextView.snp.makeConstraints() {
+            $0.top.equalTo(versionInfoLabel.snp.bottom).offset(12)
+            $0.leading.equalToSuperview().offset(20)
+            $0.trailing.equalToSuperview().offset(-48)
+            $0.height.equalTo(60)
         }
         
         dummyView.snp.makeConstraints() {
