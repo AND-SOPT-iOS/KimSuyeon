@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A3027A0F2CBD4746002DE7F9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3027A0E2CBD4746002DE7F9 /* MainViewController.swift */; };
 		A3042BB12CB802100012E684 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3042BB02CB802100012E684 /* AppDelegate.swift */; };
 		A3042BB32CB802100012E684 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3042BB22CB802100012E684 /* SceneDelegate.swift */; };
 		A3042BB52CB802100012E684 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3042BB42CB802100012E684 /* ViewController.swift */; };
@@ -16,9 +17,12 @@
 		A3042BCE2CB80CD80012E684 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A3042BCD2CB80CD80012E684 /* SnapKit */; };
 		A3042BD12CB80CDF0012E684 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = A3042BD02CB80CDF0012E684 /* Then */; };
 		A3042BD32CB80D280012E684 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3042BD22CB80D280012E684 /* DetailViewController.swift */; };
+		A3C78AB22CBA5B6A00B6F7BE /* TossViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C78AB12CBA5B6A00B6F7BE /* TossViewController.swift */; };
+		A3C78AB42CBA609B00B6F7BE /* TossView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C78AB32CBA609B00B6F7BE /* TossView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A3027A0E2CBD4746002DE7F9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A3042BAD2CB802100012E684 /* 35th-Sopt-Seminar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "35th-Sopt-Seminar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3042BB02CB802100012E684 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3042BB22CB802100012E684 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +32,8 @@
 		A3042BBC2CB802150012E684 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3042BBE2CB802150012E684 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3042BD22CB80D280012E684 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		A3C78AB12CBA5B6A00B6F7BE /* TossViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TossViewController.swift; sourceTree = "<group>"; };
+		A3C78AB32CBA609B00B6F7BE /* TossView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TossView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,9 @@
 				A3042BB22CB802100012E684 /* SceneDelegate.swift */,
 				A3042BB42CB802100012E684 /* ViewController.swift */,
 				A3042BD22CB80D280012E684 /* DetailViewController.swift */,
+				A3027A0E2CBD4746002DE7F9 /* MainViewController.swift */,
+				A3C78AB32CBA609B00B6F7BE /* TossView.swift */,
+				A3C78AB12CBA5B6A00B6F7BE /* TossViewController.swift */,
 				A3042BB62CB802100012E684 /* Main.storyboard */,
 				A3042BBB2CB802150012E684 /* LaunchScreen.storyboard */,
 				A3042BB92CB802150012E684 /* Assets.xcassets */,
@@ -153,10 +162,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3027A0F2CBD4746002DE7F9 /* MainViewController.swift in Sources */,
 				A3042BB52CB802100012E684 /* ViewController.swift in Sources */,
+				A3C78AB22CBA5B6A00B6F7BE /* TossViewController.swift in Sources */,
 				A3042BB12CB802100012E684 /* AppDelegate.swift in Sources */,
 				A3042BB32CB802100012E684 /* SceneDelegate.swift in Sources */,
 				A3042BD32CB80D280012E684 /* DetailViewController.swift in Sources */,
+				A3C78AB42CBA609B00B6F7BE /* TossView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
