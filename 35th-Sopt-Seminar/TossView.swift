@@ -78,11 +78,13 @@ final class TossView: UIView {
     }
     
     private let versionDetailTextView = UITextView().then {
-        // TODO: 행간 적용
         // TODO: 동적 높이 적용
         
-        $0.text = "• 구석구석 숨어있던 버그들을 잡았어요. 또 다른 버그가 나타나면 토스 고객센터를 찾아주세요. 늘 열려있답니다. 365일 24시간 언제든지요."
-        $0.font = .systemFont(ofSize: 14, weight: .regular)
+        $0.attributedText = .makeAttributedString(
+            "• 구석구석 숨어있던 버그들을 잡았어요. 또 다른 버그가 나타나면 토스 고객센터를 찾아주세요. 늘 열려있답니다. 365일 24시간 언제든지요.",
+            font: .systemFont(ofSize: 14, weight: .regular),
+            lineHeight: 1.6
+        )
         $0.textContainerInset = .zero  // 패딩 없앰
         $0.textContainer.lineFragmentPadding = 0  // 좌우 여백 없앰
         $0.isEditable = false
