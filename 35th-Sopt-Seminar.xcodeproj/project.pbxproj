@@ -20,6 +20,7 @@
 		A3C78AB22CBA5B6A00B6F7BE /* TossViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C78AB12CBA5B6A00B6F7BE /* TossViewController.swift */; };
 		A3C78AB42CBA609B00B6F7BE /* TossView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C78AB32CBA609B00B6F7BE /* TossView.swift */; };
 		A3CD13892CBF2D940093C9F9 /* NSAttributedString+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CD13882CBF2D940093C9F9 /* NSAttributedString+.swift */; };
+		A3CD138B2CBF34140093C9F9 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CD138A2CBF34140093C9F9 /* UIView+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		A3C78AB12CBA5B6A00B6F7BE /* TossViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TossViewController.swift; sourceTree = "<group>"; };
 		A3C78AB32CBA609B00B6F7BE /* TossView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TossView.swift; sourceTree = "<group>"; };
 		A3CD13882CBF2D940093C9F9 /* NSAttributedString+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+.swift"; sourceTree = "<group>"; };
+		A3CD138A2CBF34140093C9F9 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				A3CD13882CBF2D940093C9F9 /* NSAttributedString+.swift */,
+				A3CD138A2CBF34140093C9F9 /* UIView+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 				A3042BB12CB802100012E684 /* AppDelegate.swift in Sources */,
 				A3042BB32CB802100012E684 /* SceneDelegate.swift in Sources */,
 				A3042BD32CB80D280012E684 /* DetailViewController.swift in Sources */,
+				A3CD138B2CBF34140093C9F9 /* UIView+.swift in Sources */,
 				A3C78AB42CBA609B00B6F7BE /* TossView.swift in Sources */,
 				A3CD13892CBF2D940093C9F9 /* NSAttributedString+.swift in Sources */,
 			);

@@ -127,21 +127,20 @@ private extension TossView {
     func setUI() {
         self.addSubview(scrollView)
         scrollView.addSubview(contentView)
-        [logoImage,
-         titleLabel,
-         subtitleLabel,
-         openButton,
-         shareButton,
-         lineView,
-         newsLabel,
-         versionInfoLabel,
-         versionHistoryLabel,
-         lastUpdatedLabel,
-         versionDetailTextView,
-         dummyView
-        ].forEach {
-            contentView.addSubview($0)
-        }
+        contentView.addSubviews(
+            logoImage,
+            titleLabel,
+            subtitleLabel,
+            openButton,
+            shareButton,
+            lineView,
+            newsLabel,
+            versionInfoLabel,
+            versionHistoryLabel,
+            lastUpdatedLabel,
+            versionDetailTextView,
+            dummyView
+        )
     }
     
     func setLayout() {
