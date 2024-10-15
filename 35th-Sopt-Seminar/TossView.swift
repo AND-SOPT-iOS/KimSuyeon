@@ -13,13 +13,18 @@ final class TossView: UIView {
     private let scrollView = UIScrollView()
     private let contentView = UIView()
     
+    // 구분 선
+    private let lineView = UIView().then {
+        $0.backgroundColor = .systemGray5
+    }
+    
     // 최상단 정보 뷰
     private let logoImage = UIImageView().then {
         $0.image = .imgTossLogo
         $0.layer.cornerRadius = 24
         $0.clipsToBounds = true
         $0.layer.borderWidth = 1
-        $0.layer.borderColor = UIColor.lightGray.cgColor
+        $0.layer.borderColor = UIColor.systemGray5.cgColor
     }
     
     private let titleLabel = UILabel().then {
@@ -30,7 +35,7 @@ final class TossView: UIView {
     private let subtitleLabel = UILabel().then {
         $0.text = "금융이 쉬워진다"
         $0.font = .systemFont(ofSize: 14, weight: .regular)
-        $0.textColor = .gray
+        $0.textColor = .systemGray
     }
     
     private let openButton = UIButton().then {
@@ -57,7 +62,7 @@ final class TossView: UIView {
     private let versionInfoLabel = UILabel().then {
         $0.text = "버전 5.184.0"
         $0.font = .systemFont(ofSize: 14, weight: .regular)
-        $0.textColor = .gray
+        $0.textColor = .systemGray
     }
     
     private let versionHistoryLabel = UILabel().then {
@@ -69,7 +74,7 @@ final class TossView: UIView {
     private let lastUpdatedLabel = UILabel().then {
         $0.text = "3일 전"
         $0.font = .systemFont(ofSize: 14, weight: .regular)
-        $0.textColor = .gray
+        $0.textColor = .systemGray
     }
     
     private let versionDetailTextView = UITextView().then {
@@ -125,6 +130,7 @@ private extension TossView {
          subtitleLabel,
          openButton,
          shareButton,
+         lineView,
          newsLabel,
          versionInfoLabel,
          versionHistoryLabel,
@@ -150,7 +156,7 @@ private extension TossView {
         logoImage.snp.makeConstraints() {
             $0.top.equalToSuperview().offset(4)
             $0.leading.equalToSuperview().offset(20)
-            $0.width.height.equalTo(120)
+            $0.width.height.equalTo(116)
         }
         
         titleLabel.snp.makeConstraints() {
@@ -175,13 +181,20 @@ private extension TossView {
             $0.trailing.equalToSuperview().offset(-20)
         }
         
-        newsLabel.snp.makeConstraints() {
+        lineView.snp.makeConstraints {
             $0.top.equalTo(logoImage.snp.bottom).offset(20)
+            $0.leading.equalToSuperview().inset(20)
+            $0.trailing.equalToSuperview()
+            $0.height.equalTo(1)
+        }
+        
+        newsLabel.snp.makeConstraints() {
+            $0.top.equalTo(lineView.snp.bottom).offset(12)
             $0.leading.equalToSuperview().offset(20)
         }
         
         versionInfoLabel.snp.makeConstraints() {
-            $0.top.equalTo(newsLabel.snp.bottom).offset(4)
+            $0.top.equalTo(newsLabel.snp.bottom).offset(6)
             $0.leading.equalToSuperview().offset(20)
         }
         
@@ -191,12 +204,12 @@ private extension TossView {
         }
         
         lastUpdatedLabel.snp.makeConstraints() {
-            $0.top.equalTo(versionHistoryLabel.snp.bottom).offset(4)
+            $0.top.equalTo(versionHistoryLabel.snp.bottom).offset(6)
             $0.trailing.equalToSuperview().offset(-20)
         }
         
         versionDetailTextView.snp.makeConstraints() {
-            $0.top.equalTo(versionInfoLabel.snp.bottom).offset(12)
+            $0.top.equalTo(versionInfoLabel.snp.bottom).offset(14)
             $0.leading.equalToSuperview().offset(20)
             $0.trailing.equalToSuperview().offset(-48)
             $0.height.equalTo(60)
