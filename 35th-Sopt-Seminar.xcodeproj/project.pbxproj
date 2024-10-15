@@ -68,19 +68,43 @@
 		A3042BAF2CB802100012E684 /* 35th-Sopt-Seminar */ = {
 			isa = PBXGroup;
 			children = (
-				A3042BB02CB802100012E684 /* AppDelegate.swift */,
-				A3042BB22CB802100012E684 /* SceneDelegate.swift */,
+				A371614B2CBE2D8C00F3AFFF /* Application */,
+				A371614A2CBE2D6B00F3AFFF /* Resource */,
+				A37161492CBE2BF300F3AFFF /* Extension */,
 				A3042BB42CB802100012E684 /* ViewController.swift */,
 				A3042BD22CB80D280012E684 /* DetailViewController.swift */,
 				A3027A0E2CBD4746002DE7F9 /* MainViewController.swift */,
 				A3C78AB32CBA609B00B6F7BE /* TossView.swift */,
 				A3C78AB12CBA5B6A00B6F7BE /* TossViewController.swift */,
-				A3042BB62CB802100012E684 /* Main.storyboard */,
+			);
+			path = "35th-Sopt-Seminar";
+			sourceTree = "<group>";
+		};
+		A37161492CBE2BF300F3AFFF /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A371614A2CBE2D6B00F3AFFF /* Resource */ = {
+			isa = PBXGroup;
+			children = (
 				A3042BBB2CB802150012E684 /* LaunchScreen.storyboard */,
+				A3042BB62CB802100012E684 /* Main.storyboard */,
 				A3042BB92CB802150012E684 /* Assets.xcassets */,
 				A3042BBE2CB802150012E684 /* Info.plist */,
 			);
-			path = "35th-Sopt-Seminar";
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		A371614B2CBE2D8C00F3AFFF /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A3042BB02CB802100012E684 /* AppDelegate.swift */,
+				A3042BB22CB802100012E684 /* SceneDelegate.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
