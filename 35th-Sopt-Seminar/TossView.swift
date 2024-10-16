@@ -13,11 +13,6 @@ final class TossView: UIView {
     private let scrollView = UIScrollView()
     private let contentView = UIView()
     
-    // 구분 선
-    private let lineView = UIView().then {
-        $0.backgroundColor = .systemGray5
-    }
-    
     // 최상단 정보 뷰
     private let logoImage = UIImageView().then {
         $0.image = .imgTossLogo
@@ -53,6 +48,11 @@ final class TossView: UIView {
         $0.tintColor = .systemBlue
     }
     
+    // 구분 선
+    private let firstLineView = UIView().then {
+        $0.backgroundColor = .systemGray5
+    }
+    
     // 새로운 소식 뷰
     private let newsLabel = UILabel().then {
         $0.text = "새로운 소식"
@@ -77,22 +77,41 @@ final class TossView: UIView {
         $0.textColor = .systemGray
     }
     
-    private let versionDetailTextView = UITextView().then {
-        // TODO: 동적 높이 적용
-        
+    private let versionDetailLabel = UILabel().then {
         $0.attributedText = .makeAttributedString(
             "• 구석구석 숨어있던 버그들을 잡았어요. 또 다른 버그가 나타나면 토스 고객센터를 찾아주세요. 늘 열려있답니다. 365일 24시간 언제든지요.",
             font: .systemFont(ofSize: 14, weight: .regular),
             lineHeight: 1.6
         )
-        $0.textContainerInset = .zero  // 패딩 없앰
-        $0.textContainer.lineFragmentPadding = 0  // 좌우 여백 없앰
-        $0.isEditable = false
+        $0.numberOfLines = 0
+    }
+    
+    // 구분 선
+    private let secondLineView = UIView().then {
+        $0.backgroundColor = .systemGray5
     }
     
     // 미리 보기 뷰
-    private let previewLabel = UILabel()
-    private let previewImage = UIImageView()
+    private let previewLabel = UILabel().then {
+        $0.text = "미리 보기"
+        $0.font = .systemFont(ofSize: 22, weight: .semibold)
+    }
+    
+    private let previewImage1 = UIImageView().then {
+        $0.image = .imgPreview1
+        $0.layer.cornerRadius = 20
+        $0.clipsToBounds = true
+        $0.layer.borderWidth = 1
+        $0.layer.borderColor = UIColor.systemGray5.cgColor
+    }
+    
+    private let previewImage2 = UIImageView().then {
+        $0.image = .imgPreview2
+        $0.layer.cornerRadius = 20
+        $0.clipsToBounds = true
+        $0.layer.borderWidth = 1
+        $0.layer.borderColor = UIColor.systemGray5.cgColor
+    }
     
     // 앱 정보 뷰
     private let appInfoLabel = UILabel()
@@ -133,12 +152,16 @@ private extension TossView {
             subtitleLabel,
             openButton,
             shareButton,
-            lineView,
+            firstLineView,
             newsLabel,
             versionInfoLabel,
             versionHistoryLabel,
             lastUpdatedLabel,
-            versionDetailTextView,
+            versionDetailLabel,
+            secondLineView,
+            previewLabel,
+            previewImage1,
+            previewImage2,
             dummyView
         )
     }
@@ -182,7 +205,7 @@ private extension TossView {
             $0.trailing.equalToSuperview().offset(-20)
         }
         
-        lineView.snp.makeConstraints {
+        firstLineView.snp.makeConstraints {
             $0.top.equalTo(logoImage.snp.bottom).offset(20)
             $0.leading.equalToSuperview().inset(20)
             $0.trailing.equalToSuperview()
@@ -190,7 +213,7 @@ private extension TossView {
         }
         
         newsLabel.snp.makeConstraints() {
-            $0.top.equalTo(lineView.snp.bottom).offset(12)
+            $0.top.equalTo(firstLineView.snp.bottom).offset(8)
             $0.leading.equalToSuperview().offset(20)
         }
         
@@ -209,11 +232,36 @@ private extension TossView {
             $0.trailing.equalToSuperview().offset(-20)
         }
         
-        versionDetailTextView.snp.makeConstraints() {
+        versionDetailLabel.snp.makeConstraints() {
             $0.top.equalTo(versionInfoLabel.snp.bottom).offset(14)
             $0.leading.equalToSuperview().offset(20)
             $0.trailing.equalToSuperview().offset(-48)
-            $0.height.equalTo(60)
+        }
+        
+        secondLineView.snp.makeConstraints {
+            $0.top.equalTo(versionDetailLabel.snp.bottom).offset(20)
+            $0.leading.equalToSuperview().inset(20)
+            $0.trailing.equalToSuperview()
+            $0.height.equalTo(1)
+        }
+        
+        previewLabel.snp.makeConstraints() {
+            $0.top.equalTo(secondLineView.snp.bottom).offset(8)
+            $0.leading.equalToSuperview().offset(20)
+        }
+        
+        previewImage1.snp.makeConstraints() {
+            $0.top.equalTo(previewLabel.snp.bottom).offset(8)
+            $0.leading.equalToSuperview().offset(20)
+            $0.width.equalTo(214)
+            $0.height.equalTo(460)
+        }
+        
+        previewImage2.snp.makeConstraints() {
+            $0.top.equalTo(previewLabel.snp.bottom).offset(8)
+            $0.leading.equalTo(previewImage1.snp.trailing).offset(8)
+            $0.width.equalTo(214)
+            $0.height.equalTo(460)
         }
         
         dummyView.snp.makeConstraints() {
