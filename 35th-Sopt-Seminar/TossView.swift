@@ -126,7 +126,7 @@ final class TossView: UIView {
     private let reviewContentView = UIView()
     
     private let dummyView = UIView().then {
-        $0.backgroundColor = .blue
+        $0.backgroundColor = .white
     }
     
     override init(frame: CGRect) {
