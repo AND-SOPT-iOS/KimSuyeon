@@ -19,6 +19,10 @@
 		A3042BD32CB80D280012E684 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3042BD22CB80D280012E684 /* DetailViewController.swift */; };
 		A3C78AB22CBA5B6A00B6F7BE /* TossViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C78AB12CBA5B6A00B6F7BE /* TossViewController.swift */; };
 		A3C78AB42CBA609B00B6F7BE /* TossView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C78AB32CBA609B00B6F7BE /* TossView.swift */; };
+		A3CC50312CCCB2AE00BC49F6 /* PopularAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CC50302CCCB2AE00BC49F6 /* PopularAppViewController.swift */; };
+		A3CC50332CCCB36E00BC49F6 /* PopularAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CC50322CCCB36E00BC49F6 /* PopularAppView.swift */; };
+		A3CC50352CCCB39000BC49F6 /* PopularAppTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CC50342CCCB39000BC49F6 /* PopularAppTableViewCell.swift */; };
+		A3CC50372CCCB5BF00BC49F6 /* PopularAppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CC50362CCCB5BF00BC49F6 /* PopularAppModel.swift */; };
 		A3CD13892CBF2D940093C9F9 /* NSAttributedString+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CD13882CBF2D940093C9F9 /* NSAttributedString+.swift */; };
 		A3CD138B2CBF34140093C9F9 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CD138A2CBF34140093C9F9 /* UIView+.swift */; };
 /* End PBXBuildFile section */
@@ -36,6 +40,10 @@
 		A3042BD22CB80D280012E684 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		A3C78AB12CBA5B6A00B6F7BE /* TossViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TossViewController.swift; sourceTree = "<group>"; };
 		A3C78AB32CBA609B00B6F7BE /* TossView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TossView.swift; sourceTree = "<group>"; };
+		A3CC50302CCCB2AE00BC49F6 /* PopularAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularAppViewController.swift; sourceTree = "<group>"; };
+		A3CC50322CCCB36E00BC49F6 /* PopularAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularAppView.swift; sourceTree = "<group>"; };
+		A3CC50342CCCB39000BC49F6 /* PopularAppTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularAppTableViewCell.swift; sourceTree = "<group>"; };
+		A3CC50362CCCB5BF00BC49F6 /* PopularAppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularAppModel.swift; sourceTree = "<group>"; };
 		A3CD13882CBF2D940093C9F9 /* NSAttributedString+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+.swift"; sourceTree = "<group>"; };
 		A3CD138A2CBF34140093C9F9 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +88,10 @@
 				A3027A0E2CBD4746002DE7F9 /* MainViewController.swift */,
 				A3C78AB32CBA609B00B6F7BE /* TossView.swift */,
 				A3C78AB12CBA5B6A00B6F7BE /* TossViewController.swift */,
+				A3CC50302CCCB2AE00BC49F6 /* PopularAppViewController.swift */,
+				A3CC50322CCCB36E00BC49F6 /* PopularAppView.swift */,
+				A3CC50342CCCB39000BC49F6 /* PopularAppTableViewCell.swift */,
+				A3CC50362CCCB5BF00BC49F6 /* PopularAppModel.swift */,
 			);
 			path = "35th-Sopt-Seminar";
 			sourceTree = "<group>";
@@ -198,9 +210,13 @@
 				A3042BB12CB802100012E684 /* AppDelegate.swift in Sources */,
 				A3042BB32CB802100012E684 /* SceneDelegate.swift in Sources */,
 				A3042BD32CB80D280012E684 /* DetailViewController.swift in Sources */,
+				A3CC50332CCCB36E00BC49F6 /* PopularAppView.swift in Sources */,
+				A3CC50372CCCB5BF00BC49F6 /* PopularAppModel.swift in Sources */,
 				A3CD138B2CBF34140093C9F9 /* UIView+.swift in Sources */,
 				A3C78AB42CBA609B00B6F7BE /* TossView.swift in Sources */,
+				A3CC50312CCCB2AE00BC49F6 /* PopularAppViewController.swift in Sources */,
 				A3CD13892CBF2D940093C9F9 /* NSAttributedString+.swift in Sources */,
+				A3CC50352CCCB39000BC49F6 /* PopularAppTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
