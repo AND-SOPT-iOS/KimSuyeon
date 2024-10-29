@@ -30,12 +30,18 @@ final class AppViewController: UIViewController {
         
         setUI()
         setLayout()
+        setNavigationBar()
     }
 
+    private func setNavigationBar() {
+        let backButton = UIBarButtonItem(title: "앱", style: .plain, target: nil, action: nil)
+        navigationItem.backBarButtonItem = backButton
+    }
     
     @objc
     func financeButtonDidTap() {
         let financeAppViewController = FinanceAppViewController()
+        financeAppViewController.title = "금융"
         
         self.navigationController?.pushViewController(financeAppViewController, animated: true)
     }
