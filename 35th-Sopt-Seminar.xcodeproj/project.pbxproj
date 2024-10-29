@@ -20,6 +20,8 @@
 		A3730B032CD085E90075016D /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3730B022CD085E90075016D /* GameViewController.swift */; };
 		A3730B052CD086090075016D /* ArcadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3730B042CD086090075016D /* ArcadeViewController.swift */; };
 		A3730B072CD086230075016D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3730B062CD086230075016D /* SearchViewController.swift */; };
+		A3730B0E2CD08E9C0075016D /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3730B0D2CD08E9C0075016D /* UIView+.swift */; };
+		A3730B102CD08F480075016D /* FinanceAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3730B0F2CD08F480075016D /* FinanceAppViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		A3730B022CD085E90075016D /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		A3730B042CD086090075016D /* ArcadeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcadeViewController.swift; sourceTree = "<group>"; };
 		A3730B062CD086230075016D /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		A3730B0D2CD08E9C0075016D /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIView+.swift"; path = "35th-Sopt-Seminar/UIView+.swift"; sourceTree = SOURCE_ROOT; };
+		A3730B0F2CD08F480075016D /* FinanceAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceAppViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,7 @@
 		A3730B0A2CD089F50075016D /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				A3730B0C2CD08E800075016D /* Extension */,
 				A3042BB62CB802100012E684 /* Main.storyboard */,
 				A3042BBB2CB802150012E684 /* LaunchScreen.storyboard */,
 				A3042BB92CB802150012E684 /* Assets.xcassets */,
@@ -106,8 +111,17 @@
 				A3730AFE2CD0810F0075016D /* AppViewController.swift */,
 				A3730B042CD086090075016D /* ArcadeViewController.swift */,
 				A3730B062CD086230075016D /* SearchViewController.swift */,
+				A3730B0F2CD08F480075016D /* FinanceAppViewController.swift */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		A3730B0C2CD08E800075016D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A3730B0D2CD08E9C0075016D /* UIView+.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,8 +209,10 @@
 				A3730B012CD085A00075016D /* TodayViewController.swift in Sources */,
 				A3730B052CD086090075016D /* ArcadeViewController.swift in Sources */,
 				A3042BB12CB802100012E684 /* AppDelegate.swift in Sources */,
+				A3730B0E2CD08E9C0075016D /* UIView+.swift in Sources */,
 				A3730AFD2CD070CF0075016D /* MainTabBarController.swift in Sources */,
 				A3042BB32CB802100012E684 /* SceneDelegate.swift in Sources */,
+				A3730B102CD08F480075016D /* FinanceAppViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
