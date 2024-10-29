@@ -48,6 +48,10 @@ final class MainTabBarController: UITabBarController {
         
         let tabBarAppearance = UITabBarAppearance()
         tabBarAppearance.configureWithTransparentBackground()
+        tabBarAppearance.backgroundEffect = UIBlurEffect(style: .light)
+        tabBarAppearance.backgroundColor = UIColor.white.withAlphaComponent(0.5)
+        tabBarAppearance.shadowColor = UIColor.systemGray4
+        
         tabBar.standardAppearance = tabBarAppearance
         tabBar.scrollEdgeAppearance = tabBarAppearance
         
