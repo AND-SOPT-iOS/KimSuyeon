@@ -81,6 +81,18 @@
 			path = "35th-Sopt-Seminar";
 			sourceTree = "<group>";
 		};
+		A35A68A52CD0BBC200F955A2 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				A3730B002CD085A00075016D /* TodayViewController.swift */,
+				A3730B022CD085E90075016D /* GameViewController.swift */,
+				A3730AFE2CD0810F0075016D /* AppViewController.swift */,
+				A3730B042CD086090075016D /* ArcadeViewController.swift */,
+				A3730B062CD086230075016D /* SearchViewController.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
 		A3730B082CD089CC0075016D /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -105,12 +117,8 @@
 		A3730B0B2CD08A500075016D /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				A35A68A52CD0BBC200F955A2 /* Menu */,
 				A3730AFC2CD070CF0075016D /* MainTabBarController.swift */,
-				A3730B002CD085A00075016D /* TodayViewController.swift */,
-				A3730B022CD085E90075016D /* GameViewController.swift */,
-				A3730AFE2CD0810F0075016D /* AppViewController.swift */,
-				A3730B042CD086090075016D /* ArcadeViewController.swift */,
-				A3730B062CD086230075016D /* SearchViewController.swift */,
 				A3730B0F2CD08F480075016D /* FinanceAppViewController.swift */,
 			);
 			path = Source;
