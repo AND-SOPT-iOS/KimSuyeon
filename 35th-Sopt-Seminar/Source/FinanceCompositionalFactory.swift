@@ -15,8 +15,6 @@ enum FinanceCompositionalFactory {
             switch sectionNumber {
             case 0:
                 section = createAdSection()
-            case 1:
-                section = createDefaultSection()
             default:
                 section = createDefaultSection()
             }
