@@ -17,8 +17,6 @@ final class FinanceAppView: UIView {
         frame: .zero, collectionViewLayout: collectionViewLayout
     )
     
-    var adData = FinanceAdModel.mockAdData()
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -42,4 +40,3 @@ private extension FinanceAppView {
         }
     }
 }
-
