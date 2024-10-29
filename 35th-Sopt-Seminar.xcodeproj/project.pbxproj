@@ -9,23 +9,33 @@
 /* Begin PBXBuildFile section */
 		A3042BB12CB802100012E684 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3042BB02CB802100012E684 /* AppDelegate.swift */; };
 		A3042BB32CB802100012E684 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3042BB22CB802100012E684 /* SceneDelegate.swift */; };
-		A3042BB52CB802100012E684 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3042BB42CB802100012E684 /* ViewController.swift */; };
 		A3042BB82CB802100012E684 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A3042BB72CB802100012E684 /* Base */; };
 		A3042BBA2CB802150012E684 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3042BB92CB802150012E684 /* Assets.xcassets */; };
 		A3042BBD2CB802150012E684 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A3042BBC2CB802150012E684 /* Base */; };
 		A3042BCE2CB80CD80012E684 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A3042BCD2CB80CD80012E684 /* SnapKit */; };
 		A3042BD12CB80CDF0012E684 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = A3042BD02CB80CDF0012E684 /* Then */; };
+		A3730AFD2CD070CF0075016D /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3730AFC2CD070CF0075016D /* MainTabBarController.swift */; };
+		A3730AFF2CD0810F0075016D /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3730AFE2CD0810F0075016D /* AppViewController.swift */; };
+		A3730B012CD085A00075016D /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3730B002CD085A00075016D /* TodayViewController.swift */; };
+		A3730B032CD085E90075016D /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3730B022CD085E90075016D /* GameViewController.swift */; };
+		A3730B052CD086090075016D /* ArcadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3730B042CD086090075016D /* ArcadeViewController.swift */; };
+		A3730B072CD086230075016D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3730B062CD086230075016D /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A3042BAD2CB802100012E684 /* 35th-Sopt-Seminar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "35th-Sopt-Seminar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3042BB02CB802100012E684 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3042BB22CB802100012E684 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A3042BB42CB802100012E684 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A3042BB72CB802100012E684 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A3042BB92CB802150012E684 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3042BBC2CB802150012E684 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3042BBE2CB802150012E684 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3730AFC2CD070CF0075016D /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		A3730AFE2CD0810F0075016D /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
+		A3730B002CD085A00075016D /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		A3730B022CD085E90075016D /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		A3730B042CD086090075016D /* ArcadeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcadeViewController.swift; sourceTree = "<group>"; };
+		A3730B062CD086230075016D /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +72,12 @@
 			children = (
 				A3042BB02CB802100012E684 /* AppDelegate.swift */,
 				A3042BB22CB802100012E684 /* SceneDelegate.swift */,
-				A3042BB42CB802100012E684 /* ViewController.swift */,
+				A3730AFC2CD070CF0075016D /* MainTabBarController.swift */,
+				A3730B002CD085A00075016D /* TodayViewController.swift */,
+				A3730B022CD085E90075016D /* GameViewController.swift */,
+				A3730AFE2CD0810F0075016D /* AppViewController.swift */,
+				A3730B042CD086090075016D /* ArcadeViewController.swift */,
+				A3730B062CD086230075016D /* SearchViewController.swift */,
 				A3042BB62CB802100012E684 /* Main.storyboard */,
 				A3042BBB2CB802150012E684 /* LaunchScreen.storyboard */,
 				A3042BB92CB802150012E684 /* Assets.xcassets */,
@@ -150,8 +165,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3042BB52CB802100012E684 /* ViewController.swift in Sources */,
+				A3730B032CD085E90075016D /* GameViewController.swift in Sources */,
+				A3730AFF2CD0810F0075016D /* AppViewController.swift in Sources */,
+				A3730B072CD086230075016D /* SearchViewController.swift in Sources */,
+				A3730B012CD085A00075016D /* TodayViewController.swift in Sources */,
+				A3730B052CD086090075016D /* ArcadeViewController.swift in Sources */,
 				A3042BB12CB802100012E684 /* AppDelegate.swift in Sources */,
+				A3730AFD2CD070CF0075016D /* MainTabBarController.swift in Sources */,
 				A3042BB32CB802100012E684 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
