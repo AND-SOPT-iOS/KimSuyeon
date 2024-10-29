@@ -350,7 +350,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U4M8QWP7V2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "35th-Sopt-Seminar/Info.plist";
+				INFOPLIST_FILE = "35th-Sopt-Seminar/Resource/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -378,7 +378,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U4M8QWP7V2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "35th-Sopt-Seminar/Info.plist";
+				INFOPLIST_FILE = "35th-Sopt-Seminar/Resource/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
