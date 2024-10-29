@@ -14,6 +14,10 @@
 		A3042BBD2CB802150012E684 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A3042BBC2CB802150012E684 /* Base */; };
 		A3042BCE2CB80CD80012E684 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A3042BCD2CB80CD80012E684 /* SnapKit */; };
 		A3042BD12CB80CDF0012E684 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = A3042BD02CB80CDF0012E684 /* Then */; };
+		A35A68A82CD0E96D00F955A2 /* FinanceAdCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35A68A72CD0E96D00F955A2 /* FinanceAdCollectionViewCell.swift */; };
+		A35A68AA2CD0F16900F955A2 /* FinanceAdModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35A68A92CD0F16900F955A2 /* FinanceAdModel.swift */; };
+		A35A68AE2CD1182800F955A2 /* FinanceCompositionalFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35A68AD2CD1182800F955A2 /* FinanceCompositionalFactory.swift */; };
+		A35A68B02CD11B7900F955A2 /* FinanceAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35A68AF2CD11B7900F955A2 /* FinanceAppView.swift */; };
 		A3730AFD2CD070CF0075016D /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3730AFC2CD070CF0075016D /* MainTabBarController.swift */; };
 		A3730AFF2CD0810F0075016D /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3730AFE2CD0810F0075016D /* AppViewController.swift */; };
 		A3730B012CD085A00075016D /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3730B002CD085A00075016D /* TodayViewController.swift */; };
@@ -32,6 +36,10 @@
 		A3042BB92CB802150012E684 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3042BBC2CB802150012E684 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3042BBE2CB802150012E684 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A35A68A72CD0E96D00F955A2 /* FinanceAdCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceAdCollectionViewCell.swift; sourceTree = "<group>"; };
+		A35A68A92CD0F16900F955A2 /* FinanceAdModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceAdModel.swift; sourceTree = "<group>"; };
+		A35A68AD2CD1182800F955A2 /* FinanceCompositionalFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceCompositionalFactory.swift; sourceTree = "<group>"; };
+		A35A68AF2CD11B7900F955A2 /* FinanceAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceAppView.swift; sourceTree = "<group>"; };
 		A3730AFC2CD070CF0075016D /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		A3730AFE2CD0810F0075016D /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
 		A3730B002CD085A00075016D /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +128,10 @@
 				A35A68A52CD0BBC200F955A2 /* Menu */,
 				A3730AFC2CD070CF0075016D /* MainTabBarController.swift */,
 				A3730B0F2CD08F480075016D /* FinanceAppViewController.swift */,
+				A35A68AF2CD11B7900F955A2 /* FinanceAppView.swift */,
+				A35A68A72CD0E96D00F955A2 /* FinanceAdCollectionViewCell.swift */,
+				A35A68A92CD0F16900F955A2 /* FinanceAdModel.swift */,
+				A35A68AD2CD1182800F955A2 /* FinanceCompositionalFactory.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -216,9 +228,13 @@
 				A3730B072CD086230075016D /* SearchViewController.swift in Sources */,
 				A3730B012CD085A00075016D /* TodayViewController.swift in Sources */,
 				A3730B052CD086090075016D /* ArcadeViewController.swift in Sources */,
+				A35A68A82CD0E96D00F955A2 /* FinanceAdCollectionViewCell.swift in Sources */,
 				A3042BB12CB802100012E684 /* AppDelegate.swift in Sources */,
+				A35A68AE2CD1182800F955A2 /* FinanceCompositionalFactory.swift in Sources */,
+				A35A68B02CD11B7900F955A2 /* FinanceAppView.swift in Sources */,
 				A3730B0E2CD08E9C0075016D /* UIView+.swift in Sources */,
 				A3730AFD2CD070CF0075016D /* MainTabBarController.swift in Sources */,
+				A35A68AA2CD0F16900F955A2 /* FinanceAdModel.swift in Sources */,
 				A3042BB32CB802100012E684 /* SceneDelegate.swift in Sources */,
 				A3730B102CD08F480075016D /* FinanceAppViewController.swift in Sources */,
 			);
