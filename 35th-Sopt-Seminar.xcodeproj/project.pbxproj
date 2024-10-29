@@ -70,20 +70,44 @@
 		A3042BAF2CB802100012E684 /* 35th-Sopt-Seminar */ = {
 			isa = PBXGroup;
 			children = (
+				A3730B0A2CD089F50075016D /* Resource */,
+				A3730B082CD089CC0075016D /* Application */,
+				A3730B0B2CD08A500075016D /* Source */,
+			);
+			path = "35th-Sopt-Seminar";
+			sourceTree = "<group>";
+		};
+		A3730B082CD089CC0075016D /* Application */ = {
+			isa = PBXGroup;
+			children = (
 				A3042BB02CB802100012E684 /* AppDelegate.swift */,
 				A3042BB22CB802100012E684 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		A3730B0A2CD089F50075016D /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				A3042BB62CB802100012E684 /* Main.storyboard */,
+				A3042BBB2CB802150012E684 /* LaunchScreen.storyboard */,
+				A3042BB92CB802150012E684 /* Assets.xcassets */,
+				A3042BBE2CB802150012E684 /* Info.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		A3730B0B2CD08A500075016D /* Source */ = {
+			isa = PBXGroup;
+			children = (
 				A3730AFC2CD070CF0075016D /* MainTabBarController.swift */,
 				A3730B002CD085A00075016D /* TodayViewController.swift */,
 				A3730B022CD085E90075016D /* GameViewController.swift */,
 				A3730AFE2CD0810F0075016D /* AppViewController.swift */,
 				A3730B042CD086090075016D /* ArcadeViewController.swift */,
 				A3730B062CD086230075016D /* SearchViewController.swift */,
-				A3042BB62CB802100012E684 /* Main.storyboard */,
-				A3042BBB2CB802150012E684 /* LaunchScreen.storyboard */,
-				A3042BB92CB802150012E684 /* Assets.xcassets */,
-				A3042BBE2CB802150012E684 /* Info.plist */,
 			);
-			path = "35th-Sopt-Seminar";
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
