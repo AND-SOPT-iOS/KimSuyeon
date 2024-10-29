@@ -19,13 +19,18 @@ final class TodayViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .white
         setUI()
-        
+        setLayout()
+    }
+}
+
+private extension TodayViewController {
+    func setUI() {
+        view.backgroundColor = .white
+        view.addSubview(titleLabel)
     }
     
-    private func setUI() {
-        view.addSubview(titleLabel)
+    func setLayout() {
         titleLabel.snp.makeConstraints() {
             $0.top.equalToSuperview().offset(68)
             $0.leading.equalToSuperview().offset(20)
