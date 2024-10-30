@@ -34,12 +34,11 @@ final class FinanceAppViewController: UIViewController {
         setDelegate()
     }
     
-    func setNavigationBar() {
+    private func setNavigationBar() {
         self.navigationItem.title = "금융"
-        self.navigationController?.navigationBar.prefersLargeTitles = false
     }
     
-    func register() {
+    private func register() {
         rootView.collectionView.register(
             FinanceAdCollectionViewCell.self,
             forCellWithReuseIdentifier: "FinanceAdCollectionViewCell"
@@ -73,7 +72,7 @@ final class FinanceAppViewController: UIViewController {
         )
     }
     
-    func setDelegate() {
+    private func setDelegate() {
         rootView.collectionView.dataSource = self
     }
 }

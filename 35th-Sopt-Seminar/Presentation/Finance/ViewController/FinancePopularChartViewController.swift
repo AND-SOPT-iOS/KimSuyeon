@@ -27,9 +27,20 @@ final class FinancePopularChartViewController: UIViewController {
         setDelegate()
     }
     
-    func setNavigationBar() {
-        self.navigationItem.title = "인기 차트"
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
         self.navigationController?.navigationBar.prefersLargeTitles = true
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(true)
+        
+        self.navigationController?.navigationBar.prefersLargeTitles = false
+    }
+    
+    private func setNavigationBar() {
+        self.navigationItem.title = "인기 차트"
     }
     
     private func register() {
