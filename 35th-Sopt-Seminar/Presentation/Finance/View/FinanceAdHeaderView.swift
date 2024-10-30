@@ -13,6 +13,10 @@ final class FinanceAdHeaderView: UICollectionReusableView {
     
     static let identifier = "FinanceAdHeaderView"
     
+    private let border = UIView().then {
+        $0.backgroundColor = .systemGray5
+    }
+    
     private let titleLabel = UILabel().then {
         $0.textColor = .black
         $0.font = .systemFont(ofSize: 20, weight: .semibold)
@@ -44,10 +48,15 @@ final class FinanceAdHeaderView: UICollectionReusableView {
 private extension FinanceAdHeaderView {
     func setUI() {
         self.backgroundColor = .white
-        self.addSubviews(titleLabel, subtitleLabel, totalLabel)
+        self.addSubviews(border, titleLabel, subtitleLabel, totalLabel)
     }
     
     func setLayout() {
+        border.snp.makeConstraints {
+            $0.top.leading.trailing.equalToSuperview()
+            $0.height.equalTo(1)
+        }
+        
         titleLabel.snp.makeConstraints {
             $0.top.equalToSuperview().offset(12)
             $0.leading.equalToSuperview()

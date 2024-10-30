@@ -43,7 +43,7 @@ enum FinanceCompositionalFactory {
         group.contentInsets = defaultEdgeInsets
         
         let section = NSCollectionLayoutSection(group: group)
-        section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20)
+        section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 20, bottom: 20, trailing: 20)
         section.interGroupSpacing = 8
         section.orthogonalScrollingBehavior = .groupPaging
         
@@ -69,7 +69,7 @@ enum FinanceCompositionalFactory {
         group.contentInsets = defaultEdgeInsets
         
         let section = NSCollectionLayoutSection(group: group)
-        section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20)
+        section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 20, bottom: 20, trailing: 20)
         section.interGroupSpacing = 8
         section.orthogonalScrollingBehavior = .groupPaging
         
@@ -107,7 +107,7 @@ enum FinanceCompositionalFactory {
         group.contentInsets = defaultEdgeInsets
         
         let section = NSCollectionLayoutSection(group: group)
-        section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20)
+        section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 20, bottom: 20, trailing: 20)
         section.interGroupSpacing = 8
         section.orthogonalScrollingBehavior = .groupPaging
         

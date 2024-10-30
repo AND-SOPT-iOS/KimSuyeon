@@ -74,13 +74,8 @@ final class FinanceAppViewController: UIViewController {
     }
     
     func setDelegate() {
-        rootView.collectionView.delegate = self
         rootView.collectionView.dataSource = self
     }
-}
-
-extension FinanceAppViewController: UICollectionViewDelegate {
-    
 }
 
 extension FinanceAppViewController: UICollectionViewDataSource {
