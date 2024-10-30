@@ -58,12 +58,12 @@ private extension FinanceDefaultHeaderView {
     func setLayout() {
         titleLabel.snp.makeConstraints {
             $0.top.equalToSuperview().offset(12)
-            $0.leading.equalToSuperview().inset(20)
+            $0.leading.equalToSuperview()
         }
         
         totalLabel.snp.makeConstraints {
             $0.centerY.equalTo(titleLabel.snp.centerY)
-            $0.trailing.equalToSuperview().inset(20)
+            $0.trailing.equalToSuperview()
         }
     }
 }
