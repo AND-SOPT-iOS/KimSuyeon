@@ -37,6 +37,13 @@ final class FinanceEssentialCollectionViewCell: UICollectionViewCell {
         $0.font = .systemFont(ofSize: 12, weight: .regular)
     }
     
+    private let downloadButton = UIButton().then {
+        $0.titleLabel?.font = .systemFont(ofSize: 16, weight: .bold)
+        $0.setTitleColor(.systemBlue, for: .normal)
+        $0.backgroundColor = .systemGray6
+        $0.layer.cornerRadius = 16
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -53,7 +60,7 @@ final class FinanceEssentialCollectionViewCell: UICollectionViewCell {
 private extension FinanceEssentialCollectionViewCell {
     func setUI() {
         self.backgroundColor = .white
-        contentView.addSubviews(appImage, verticalStackView)
+        contentView.addSubviews(appImage, verticalStackView, downloadButton)
         verticalStackView.addArrangedSubviews(titleLabel, subtitleLabel)
     }
     
@@ -65,8 +72,16 @@ private extension FinanceEssentialCollectionViewCell {
         }
         
         verticalStackView.snp.makeConstraints {
-            $0.centerY.equalTo(appImage.snp.centerY)
+            $0.centerY.equalToSuperview()
             $0.leading.equalTo(appImage.snp.trailing).offset(12)
+            $0.trailing.equalTo(downloadButton.snp.leading).offset(-8)
+        }
+        
+        downloadButton.snp.makeConstraints {
+            $0.centerY.equalToSuperview()
+            $0.trailing.equalToSuperview()
+            $0.width.equalTo(80)
+            $0.height.equalTo(32)
         }
     }
 }
@@ -76,5 +91,16 @@ extension FinanceEssentialCollectionViewCell {
         appImage.image = mockData.appImage
         titleLabel.text = mockData.title
         subtitleLabel.text = mockData.subtitle
+        switch mockData.downloadState {
+        case .installed:
+            downloadButton.setTitle("열기", for: .normal)
+        case .update:
+            downloadButton.setTitle("업데이트", for: .normal)
+        case .download:
+            downloadButton.setTitle("받기", for: .normal)
+        case .paid(let price):
+            downloadButton.setTitle("₩\(price)", for: .normal)
+            downloadButton.titleLabel?.font = .systemFont(ofSize: 14, weight: .bold)
+        }
     }
 }
