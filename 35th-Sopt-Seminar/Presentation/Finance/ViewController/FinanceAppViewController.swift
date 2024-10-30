@@ -56,9 +56,15 @@ final class FinanceAppViewController: UIViewController {
         )
         
         rootView.collectionView.register(
-            FinanceHeaderView.self,
+            FinanceAdHeaderView.self,
             forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
-            withReuseIdentifier: FinanceHeaderView.identifier
+            withReuseIdentifier: FinanceAdHeaderView.identifier
+        )
+        
+        rootView.collectionView.register(
+            FinanceDefaultHeaderView.self,
+            forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
+            withReuseIdentifier: FinanceDefaultHeaderView.identifier
         )
     }
     
@@ -76,7 +82,7 @@ extension FinanceAppViewController: UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 4
     }
-
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch section {
         case 0:
@@ -125,24 +131,34 @@ extension FinanceAppViewController: UICollectionViewDataSource {
                         viewForSupplementaryElementOfKind kind: String,
                         at indexPath: IndexPath) -> UICollectionReusableView {
         if kind == UICollectionView.elementKindSectionHeader {
-            guard let header = collectionView.dequeueReusableSupplementaryView(
-                ofKind: kind,
-                withReuseIdentifier: FinanceHeaderView.identifier,
-                for: indexPath
-            ) as? FinanceHeaderView else { return UICollectionReusableView() }
-            
             switch indexPath.section {
             case 1:
+                guard let header = collectionView.dequeueReusableSupplementaryView(
+                    ofKind: kind,
+                    withReuseIdentifier: FinanceAdHeaderView.identifier,
+                    for: indexPath
+                ) as? FinanceAdHeaderView else { return UICollectionReusableView() }
                 header.configureHeader(title: "필수 금융 앱", subtitle: "App Store 에디터가 직접 골랐습니다")
+                return header
             case 2:
-                header.configureHeader(title: "유료 순위", subtitle: "")
+                guard let header = collectionView.dequeueReusableSupplementaryView(
+                    ofKind: kind,
+                    withReuseIdentifier: FinanceDefaultHeaderView.identifier,
+                    for: indexPath
+                ) as? FinanceDefaultHeaderView else { return UICollectionReusableView() }
+                header.configureHeader(title: "유료 순위")
+                return header
             case 3:
-                header.configureHeader(title: "무료 순위", subtitle: "")
+                guard let header = collectionView.dequeueReusableSupplementaryView(
+                    ofKind: kind,
+                    withReuseIdentifier: FinanceDefaultHeaderView.identifier,
+                    for: indexPath
+                ) as? FinanceDefaultHeaderView else { return UICollectionReusableView() }
+                header.configureHeader(title: "무료 순위")
+                return header
             default:
                 break
             }
-            
-            return header
         }
         return UICollectionReusableView()
     }
@@ -150,6 +166,11 @@ extension FinanceAppViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return CGSize(width: UIScreen.main.bounds.width, height: 60)
+        switch section {
+        case 1:
+            return CGSize(width: UIScreen.main.bounds.width, height: 60)
+        default:
+            return CGSize(width: UIScreen.main.bounds.width, height: 36)
+        }
     }
 }

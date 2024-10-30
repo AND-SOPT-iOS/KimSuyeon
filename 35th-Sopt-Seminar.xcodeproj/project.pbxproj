@@ -20,12 +20,13 @@
 		A35A68B02CD11B7900F955A2 /* FinanceAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35A68AF2CD11B7900F955A2 /* FinanceAppView.swift */; };
 		A35A68B22CD1484500F955A2 /* FinanceEssentialCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35A68B12CD1484500F955A2 /* FinanceEssentialCollectionViewCell.swift */; };
 		A35A68B42CD14B4600F955A2 /* FinanceEssentialModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35A68B32CD14B4600F955A2 /* FinanceEssentialModel.swift */; };
-		A35A68B62CD14EB300F955A2 /* FinanceHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35A68B52CD14EB300F955A2 /* FinanceHeaderView.swift */; };
+		A35A68B62CD14EB300F955A2 /* FinanceAdHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35A68B52CD14EB300F955A2 /* FinanceAdHeaderView.swift */; };
 		A35A68B82CD1549E00F955A2 /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35A68B72CD1549E00F955A2 /* UIStackView+.swift */; };
 		A35A68BA2CD16EFD00F955A2 /* FinancePaidModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35A68B92CD16EFD00F955A2 /* FinancePaidModel.swift */; };
 		A35A68BC2CD1702400F955A2 /* FinancePaidCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35A68BB2CD1702400F955A2 /* FinancePaidCollectionViewCell.swift */; };
 		A35A68BE2CD173BF00F955A2 /* FinanceFreeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35A68BD2CD173BF00F955A2 /* FinanceFreeModel.swift */; };
 		A35A68C02CD174FF00F955A2 /* FinanceFreeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35A68BF2CD174FF00F955A2 /* FinanceFreeCollectionViewCell.swift */; };
+		A35A68C72CD1FDB200F955A2 /* FinanceDefaultHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35A68C62CD1FDB200F955A2 /* FinanceDefaultHeaderView.swift */; };
 		A3730AFD2CD070CF0075016D /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3730AFC2CD070CF0075016D /* MainTabBarController.swift */; };
 		A3730AFF2CD0810F0075016D /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3730AFE2CD0810F0075016D /* AppViewController.swift */; };
 		A3730B012CD085A00075016D /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3730B002CD085A00075016D /* TodayViewController.swift */; };
@@ -50,12 +51,13 @@
 		A35A68AF2CD11B7900F955A2 /* FinanceAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceAppView.swift; sourceTree = "<group>"; };
 		A35A68B12CD1484500F955A2 /* FinanceEssentialCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceEssentialCollectionViewCell.swift; sourceTree = "<group>"; };
 		A35A68B32CD14B4600F955A2 /* FinanceEssentialModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceEssentialModel.swift; sourceTree = "<group>"; };
-		A35A68B52CD14EB300F955A2 /* FinanceHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceHeaderView.swift; sourceTree = "<group>"; };
+		A35A68B52CD14EB300F955A2 /* FinanceAdHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceAdHeaderView.swift; sourceTree = "<group>"; };
 		A35A68B72CD1549E00F955A2 /* UIStackView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
 		A35A68B92CD16EFD00F955A2 /* FinancePaidModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancePaidModel.swift; sourceTree = "<group>"; };
 		A35A68BB2CD1702400F955A2 /* FinancePaidCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancePaidCollectionViewCell.swift; sourceTree = "<group>"; };
 		A35A68BD2CD173BF00F955A2 /* FinanceFreeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceFreeModel.swift; sourceTree = "<group>"; };
 		A35A68BF2CD174FF00F955A2 /* FinanceFreeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceFreeCollectionViewCell.swift; sourceTree = "<group>"; };
+		A35A68C62CD1FDB200F955A2 /* FinanceDefaultHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceDefaultHeaderView.swift; sourceTree = "<group>"; };
 		A3730AFC2CD070CF0075016D /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		A3730AFE2CD0810F0075016D /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
 		A3730B002CD085A00075016D /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
@@ -140,7 +142,8 @@
 			isa = PBXGroup;
 			children = (
 				A35A68AF2CD11B7900F955A2 /* FinanceAppView.swift */,
-				A35A68B52CD14EB300F955A2 /* FinanceHeaderView.swift */,
+				A35A68B52CD14EB300F955A2 /* FinanceAdHeaderView.swift */,
+				A35A68C62CD1FDB200F955A2 /* FinanceDefaultHeaderView.swift */,
 				A35A68A72CD0E96D00F955A2 /* FinanceAdCollectionViewCell.swift */,
 				A35A68B12CD1484500F955A2 /* FinanceEssentialCollectionViewCell.swift */,
 				A35A68BB2CD1702400F955A2 /* FinancePaidCollectionViewCell.swift */,
@@ -294,7 +297,7 @@
 				A3730B012CD085A00075016D /* TodayViewController.swift in Sources */,
 				A35A68C02CD174FF00F955A2 /* FinanceFreeCollectionViewCell.swift in Sources */,
 				A3730B052CD086090075016D /* ArcadeViewController.swift in Sources */,
-				A35A68B62CD14EB300F955A2 /* FinanceHeaderView.swift in Sources */,
+				A35A68B62CD14EB300F955A2 /* FinanceAdHeaderView.swift in Sources */,
 				A35A68B82CD1549E00F955A2 /* UIStackView+.swift in Sources */,
 				A35A68A82CD0E96D00F955A2 /* FinanceAdCollectionViewCell.swift in Sources */,
 				A35A68B22CD1484500F955A2 /* FinanceEssentialCollectionViewCell.swift in Sources */,
@@ -306,6 +309,7 @@
 				A3730AFD2CD070CF0075016D /* MainTabBarController.swift in Sources */,
 				A35A68BC2CD1702400F955A2 /* FinancePaidCollectionViewCell.swift in Sources */,
 				A35A68AA2CD0F16900F955A2 /* FinanceAdModel.swift in Sources */,
+				A35A68C72CD1FDB200F955A2 /* FinanceDefaultHeaderView.swift in Sources */,
 				A3042BB32CB802100012E684 /* SceneDelegate.swift in Sources */,
 				A3730B102CD08F480075016D /* FinanceAppViewController.swift in Sources */,
 				A35A68BA2CD16EFD00F955A2 /* FinancePaidModel.swift in Sources */,
