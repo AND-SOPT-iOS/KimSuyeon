@@ -58,7 +58,7 @@ private extension FinanceAdHeaderView {
         }
         
         titleLabel.snp.makeConstraints {
-            $0.top.equalToSuperview().offset(12)
+            $0.top.equalToSuperview().offset(8)
             $0.leading.equalToSuperview()
         }
         
