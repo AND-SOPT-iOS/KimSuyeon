@@ -34,6 +34,11 @@ final class FinanceAppViewController: UIViewController {
         setDelegate()
     }
     
+    func setNavigationBar() {
+        self.navigationItem.title = "금융"
+        self.navigationController?.navigationBar.prefersLargeTitles = false
+    }
+    
     func register() {
         rootView.collectionView.register(
             FinanceAdCollectionViewCell.self,
