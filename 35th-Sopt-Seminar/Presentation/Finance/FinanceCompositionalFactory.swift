@@ -31,13 +31,15 @@ enum FinanceCompositionalFactory {
         }
         
         let itemSize = NSCollectionLayoutSize(
-            widthDimension: .absolute(UIScreen.main.bounds.width - 40), heightDimension: .absolute(308)
+            widthDimension: .absolute(UIScreen.main.bounds.width - 40), 
+            heightDimension: .absolute(308)
         )
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
         item.contentInsets = defaultEdgeInsets
         
         let groupSize = NSCollectionLayoutSize(
-            widthDimension: .absolute(UIScreen.main.bounds.width - 40), heightDimension: .absolute(320)
+            widthDimension: .absolute(UIScreen.main.bounds.width - 40), 
+            heightDimension: .absolute(320)
         )
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
         group.contentInsets = defaultEdgeInsets
@@ -57,13 +59,15 @@ enum FinanceCompositionalFactory {
         }
         
         let itemSize = NSCollectionLayoutSize(
-            widthDimension: .absolute(UIScreen.main.bounds.width - 40), heightDimension: .absolute(80)
+            widthDimension: .absolute(UIScreen.main.bounds.width - 40), 
+            heightDimension: .absolute(80)
         )
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
         item.contentInsets = defaultEdgeInsets
         
         let groupSize = NSCollectionLayoutSize(
-            widthDimension: .absolute(UIScreen.main.bounds.width - 40), heightDimension: .absolute(240)
+            widthDimension: .absolute(UIScreen.main.bounds.width - 40), 
+            heightDimension: .absolute(240)
         )
         let group = NSCollectionLayoutGroup.vertical(layoutSize: groupSize, subitems: [item, item, item])
         group.contentInsets = defaultEdgeInsets
@@ -74,7 +78,8 @@ enum FinanceCompositionalFactory {
         section.orthogonalScrollingBehavior = .groupPaging
         
         let headerSize = NSCollectionLayoutSize(
-            widthDimension: .fractionalWidth(1.0), heightDimension: .absolute(60)
+            widthDimension: .fractionalWidth(1.0), 
+            heightDimension: .absolute(60)
         )
         
         section.boundarySupplementaryItems = [
@@ -95,13 +100,15 @@ enum FinanceCompositionalFactory {
         }
         
         let itemSize = NSCollectionLayoutSize(
-            widthDimension: .absolute(UIScreen.main.bounds.width - 40), heightDimension: .absolute(80)
+            widthDimension: .absolute(UIScreen.main.bounds.width - 40), 
+            heightDimension: .absolute(80)
         )
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
         item.contentInsets = defaultEdgeInsets
         
         let groupSize = NSCollectionLayoutSize(
-            widthDimension: .absolute(UIScreen.main.bounds.width - 40), heightDimension: .absolute(240)
+            widthDimension: .absolute(UIScreen.main.bounds.width - 40), 
+            heightDimension: .absolute(240)
         )
         let group = NSCollectionLayoutGroup.vertical(layoutSize: groupSize, subitems: [item, item, item])
         group.contentInsets = defaultEdgeInsets
@@ -112,7 +119,8 @@ enum FinanceCompositionalFactory {
         section.orthogonalScrollingBehavior = .groupPaging
         
         let headerSize = NSCollectionLayoutSize(
-            widthDimension: .fractionalWidth(1.0), heightDimension: .absolute(36)
+            widthDimension: .fractionalWidth(1.0), 
+            heightDimension: .absolute(36)
         )
         
         section.boundarySupplementaryItems = [

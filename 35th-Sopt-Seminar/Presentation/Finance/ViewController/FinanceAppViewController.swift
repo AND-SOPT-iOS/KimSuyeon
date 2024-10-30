@@ -92,7 +92,8 @@ extension FinanceAppViewController: UICollectionViewDataSource {
         }
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    func collectionView(_ collectionView: UICollectionView, 
+                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         switch indexPath.section {
         case 0:
             guard let cell = collectionView.dequeueReusableCell(
@@ -107,6 +108,7 @@ extension FinanceAppViewController: UICollectionViewDataSource {
                 for: indexPath
             ) as? FinanceEssentialCollectionViewCell else { return UICollectionViewCell() }
             cell.dataBind(essentialData[indexPath.item])
+            cell.border.isHidden = (indexPath.item + 1) % 3 == 0
             return cell
         case 2:
             guard let cell = collectionView.dequeueReusableCell(
@@ -114,6 +116,7 @@ extension FinanceAppViewController: UICollectionViewDataSource {
                 for: indexPath
             ) as? FinancePaidCollectionViewCell else { return UICollectionViewCell() }
             cell.dataBind(paidData[indexPath.item])
+            cell.border.isHidden = (indexPath.item + 1) % 3 == 0
             return cell
         case 3:
             guard let cell = collectionView.dequeueReusableCell(
@@ -121,6 +124,7 @@ extension FinanceAppViewController: UICollectionViewDataSource {
                 for: indexPath
             ) as? FinanceFreeCollectionViewCell else { return UICollectionViewCell() }
             cell.dataBind(freeData[indexPath.item])
+            cell.border.isHidden = (indexPath.item + 1) % 3 == 0
             return cell
         default:
             return FinanceAdCollectionViewCell()
