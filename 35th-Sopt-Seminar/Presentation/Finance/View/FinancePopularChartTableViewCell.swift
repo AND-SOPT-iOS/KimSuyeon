@@ -49,6 +49,10 @@ final class FinancePopularChartTableViewCell: UITableViewCell {
         $0.layer.cornerRadius = 16
     }
     
+    let border = UIView().then {
+        $0.backgroundColor = .systemGray5
+    }
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
@@ -65,7 +69,7 @@ final class FinancePopularChartTableViewCell: UITableViewCell {
 private extension FinancePopularChartTableViewCell {
     func setUI() {
         self.backgroundColor = .white
-        contentView.addSubviews(appImage, rankingLabel, verticalStackView, downloadButton)
+        contentView.addSubviews(appImage, rankingLabel, verticalStackView, downloadButton, border)
         verticalStackView.addArrangedSubviews(titleLabel, subtitleLabel)
     }
     
@@ -92,6 +96,12 @@ private extension FinancePopularChartTableViewCell {
             $0.trailing.equalToSuperview()
             $0.width.equalTo(80)
             $0.height.equalTo(32)
+        }
+        
+        border.snp.makeConstraints {
+            $0.bottom.trailing.equalToSuperview()
+            $0.leading.equalTo(appImage.snp.trailing).offset(12)
+            $0.height.equalTo(1)
         }
     }
 }

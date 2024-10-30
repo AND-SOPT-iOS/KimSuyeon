@@ -62,6 +62,7 @@ extension FinancePopularChartViewController: UITableViewDataSource {
             for: indexPath
         ) as? FinancePopularChartTableViewCell else { return UITableViewCell() }
         cell.dataBind(appList[indexPath.row])
+        cell.border.isHidden = indexPath.row == appList.count - 1
         cell.selectionStyle = .none
         return cell
     }
