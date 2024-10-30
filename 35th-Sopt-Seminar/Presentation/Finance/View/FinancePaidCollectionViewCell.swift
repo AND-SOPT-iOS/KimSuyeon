@@ -42,6 +42,13 @@ final class FinancePaidCollectionViewCell: UICollectionViewCell {
         $0.font = .systemFont(ofSize: 12, weight: .regular)
     }
     
+    private let downloadButton = UIButton().then {
+        $0.titleLabel?.font = .systemFont(ofSize: 16, weight: .bold)
+        $0.setTitleColor(.systemBlue, for: .normal)
+        $0.backgroundColor = .systemGray6
+        $0.layer.cornerRadius = 16
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -58,7 +65,7 @@ final class FinancePaidCollectionViewCell: UICollectionViewCell {
 private extension FinancePaidCollectionViewCell {
     func setUI() {
         self.backgroundColor = .white
-        contentView.addSubviews(appImage, rankingLabel, verticalStackView)
+        contentView.addSubviews(appImage, rankingLabel, verticalStackView, downloadButton)
         verticalStackView.addArrangedSubviews(titleLabel, subtitleLabel)
     }
     
@@ -77,6 +84,14 @@ private extension FinancePaidCollectionViewCell {
         verticalStackView.snp.makeConstraints {
             $0.centerY.equalTo(appImage.snp.centerY)
             $0.leading.equalTo(rankingLabel.snp.trailing).offset(16)
+            $0.trailing.equalTo(downloadButton.snp.leading).offset(-8)
+        }
+        
+        downloadButton.snp.makeConstraints {
+            $0.centerY.equalToSuperview()
+            $0.trailing.equalToSuperview()
+            $0.width.equalTo(80)
+            $0.height.equalTo(32)
         }
     }
 }
@@ -87,5 +102,25 @@ extension FinancePaidCollectionViewCell {
         rankingLabel.text = mockData.ranking.description
         titleLabel.text = mockData.title
         subtitleLabel.text = mockData.subtitle
+        switch mockData.downloadState {
+        case .installed:
+            downloadButton.setTitle("열기", for: .normal)
+        case .update:
+            downloadButton.setTitle("업데이트", for: .normal)
+        case .download:
+            downloadButton.setTitle("받기", for: .normal)
+        case .paid(let price):
+            let formattedPrice = formatPrice(price)
+            downloadButton.setTitle("₩\(formattedPrice)", for: .normal)
+            downloadButton.titleLabel?.font = .systemFont(ofSize: 14, weight: .bold)
+        }
+    }
+    
+    /// 가격 포맷하는 함수
+    private func formatPrice(_ price: Int) -> String {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        formatter.maximumFractionDigits = 0
+        return formatter.string(from: NSNumber(value: price)) ?? "\(price)"
     }
 }

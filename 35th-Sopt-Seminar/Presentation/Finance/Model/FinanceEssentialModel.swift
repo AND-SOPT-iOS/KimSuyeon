@@ -14,13 +14,6 @@ struct FinanceEssentialModel {
     let downloadState: DownloadState
 }
 
-enum DownloadState {
-    case installed
-    case update
-    case download
-    case paid(price: Int)
-}
-
 extension FinanceEssentialModel {
     static func mockEssentialData() -> [FinanceEssentialModel] {
         return [

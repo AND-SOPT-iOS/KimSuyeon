@@ -99,8 +99,17 @@ extension FinanceEssentialCollectionViewCell {
         case .download:
             downloadButton.setTitle("받기", for: .normal)
         case .paid(let price):
-            downloadButton.setTitle("₩\(price)", for: .normal)
+            let formattedPrice = formatPrice(price)
+            downloadButton.setTitle("₩\(formattedPrice)", for: .normal)
             downloadButton.titleLabel?.font = .systemFont(ofSize: 14, weight: .bold)
         }
+    }
+    
+    /// 가격 포맷하는 함수
+    private func formatPrice(_ price: Int) -> String {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        formatter.maximumFractionDigits = 0
+        return formatter.string(from: NSNumber(value: price)) ?? "\(price)"
     }
 }
