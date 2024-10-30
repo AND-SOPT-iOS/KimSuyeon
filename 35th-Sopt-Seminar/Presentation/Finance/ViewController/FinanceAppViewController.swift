@@ -147,6 +147,10 @@ extension FinanceAppViewController: UICollectionViewDataSource {
                     for: indexPath
                 ) as? FinanceDefaultHeaderView else { return UICollectionReusableView() }
                 header.configureHeader(title: "유료 순위")
+                header.didTapTotalLabel = { [weak self] in
+                    let viewController = FinancePopularChartViewController()
+                    self?.navigationController?.pushViewController(viewController, animated: true)
+                }
                 return header
             case 3:
                 guard let header = collectionView.dequeueReusableSupplementaryView(
@@ -155,6 +159,10 @@ extension FinanceAppViewController: UICollectionViewDataSource {
                     for: indexPath
                 ) as? FinanceDefaultHeaderView else { return UICollectionReusableView() }
                 header.configureHeader(title: "무료 순위")
+                header.didTapTotalLabel = { [weak self] in
+                    let viewController = FinancePopularChartViewController()
+                    self?.navigationController?.pushViewController(viewController, animated: true)
+                }
                 return header
             default:
                 break

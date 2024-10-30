@@ -23,6 +23,12 @@ final class FinanceAdHeaderView: UICollectionReusableView {
         $0.font = .systemFont(ofSize: 14, weight: .regular)
     }
     
+    private let totalLabel = UILabel().then {
+        $0.text = "모두 보기"
+        $0.textColor = .systemBlue
+        $0.font = .systemFont(ofSize: 16, weight: .regular)
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -38,7 +44,7 @@ final class FinanceAdHeaderView: UICollectionReusableView {
 private extension FinanceAdHeaderView {
     func setUI() {
         self.backgroundColor = .white
-        self.addSubviews(titleLabel, subtitleLabel)
+        self.addSubviews(titleLabel, subtitleLabel, totalLabel)
     }
     
     func setLayout() {
@@ -50,6 +56,11 @@ private extension FinanceAdHeaderView {
         subtitleLabel.snp.makeConstraints {
             $0.top.equalTo(titleLabel.snp.bottom).offset(4)
             $0.leading.equalToSuperview().inset(20)
+        }
+        
+        totalLabel.snp.makeConstraints {
+            $0.centerY.equalTo(titleLabel.snp.centerY)
+            $0.trailing.equalToSuperview().inset(20)
         }
     }
 }
