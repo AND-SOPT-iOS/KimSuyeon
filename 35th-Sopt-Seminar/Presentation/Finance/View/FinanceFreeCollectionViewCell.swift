@@ -35,11 +35,13 @@ final class FinanceFreeCollectionViewCell: UICollectionViewCell {
     private let titleLabel = UILabel().then {
         $0.textColor = .black
         $0.font = .systemFont(ofSize: 16, weight: .regular)
+        $0.numberOfLines = 2
     }
     
     private let subtitleLabel = UILabel().then {
         $0.textColor = .systemGray
         $0.font = .systemFont(ofSize: 12, weight: .regular)
+        $0.numberOfLines = 2
     }
     
     private let downloadButton = UIButton().then {
