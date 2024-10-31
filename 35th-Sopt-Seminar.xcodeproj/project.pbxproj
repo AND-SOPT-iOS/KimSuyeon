@@ -74,7 +74,7 @@
 		A3730B022CD085E90075016D /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		A3730B042CD086090075016D /* ArcadeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcadeViewController.swift; sourceTree = "<group>"; };
 		A3730B062CD086230075016D /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		A3730B0D2CD08E9C0075016D /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIView+.swift"; path = "35th-Sopt-Seminar/UIView+.swift"; sourceTree = SOURCE_ROOT; };
+		A3730B0D2CD08E9C0075016D /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIView+.swift"; path = "35th-Sopt-Seminar/Resource/Extension/UIView+.swift"; sourceTree = SOURCE_ROOT; };
 		A3730B0F2CD08F480075016D /* FinanceAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceAppViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
