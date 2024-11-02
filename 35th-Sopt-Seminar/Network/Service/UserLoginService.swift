@@ -13,7 +13,6 @@ class UserLoginService {
   func register(
     username: String,
     password: String,
-    hobby: String,
     completion: @escaping (Result<Bool, NetworkError>) -> Void
   ) {
 
