@@ -47,6 +47,9 @@
 		A3E82F652CD5FA160070DDC8 /* UserRegisterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E82F642CD5FA160070DDC8 /* UserRegisterService.swift */; };
 		A3E82F682CD5FC3E0070DDC8 /* UserLoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E82F672CD5FC3E0070DDC8 /* UserLoginRequest.swift */; };
 		A3E82F6C2CD5FF650070DDC8 /* UserLoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E82F6B2CD5FF650070DDC8 /* UserLoginService.swift */; };
+		A3E82F722CD601E00070DDC8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E82F712CD601E00070DDC8 /* LoginViewController.swift */; };
+		A3E82F742CD601EA0070DDC8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E82F732CD601EA0070DDC8 /* LoginView.swift */; };
+		A3E82F762CD603760070DDC8 /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E82F752CD603760070DDC8 /* UITextField+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +93,9 @@
 		A3E82F642CD5FA160070DDC8 /* UserRegisterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegisterService.swift; sourceTree = "<group>"; };
 		A3E82F672CD5FC3E0070DDC8 /* UserLoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginRequest.swift; sourceTree = "<group>"; };
 		A3E82F6B2CD5FF650070DDC8 /* UserLoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginService.swift; sourceTree = "<group>"; };
+		A3E82F712CD601E00070DDC8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A3E82F732CD601EA0070DDC8 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		A3E82F752CD603760070DDC8 /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				A35A68C12CD1776200F955A2 /* Core */,
+				A3E82F702CD601BF0070DDC8 /* Login */,
 				A35A68A52CD0BBC200F955A2 /* Menu */,
 				A35A68C22CD1776F00F955A2 /* Finance */,
 			);
@@ -238,6 +245,7 @@
 			children = (
 				A3730B0D2CD08E9C0075016D /* UIView+.swift */,
 				A35A68B72CD1549E00F955A2 /* UIStackView+.swift */,
+				A3E82F752CD603760070DDC8 /* UITextField+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -270,6 +278,15 @@
 				A3E82F6B2CD5FF650070DDC8 /* UserLoginService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		A3E82F702CD601BF0070DDC8 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A3E82F732CD601EA0070DDC8 /* LoginView.swift */,
+				A3E82F712CD601E00070DDC8 /* LoginViewController.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,6 +372,7 @@
 			files = (
 				A3E82F682CD5FC3E0070DDC8 /* UserLoginRequest.swift in Sources */,
 				A37050432CD215A100C8E163 /* FinancePopularChartView.swift in Sources */,
+				A3E82F762CD603760070DDC8 /* UITextField+.swift in Sources */,
 				A3730B032CD085E90075016D /* GameViewController.swift in Sources */,
 				A3E82F5D2CD5F3930070DDC8 /* Environment.swift in Sources */,
 				A3730AFF2CD0810F0075016D /* AppViewController.swift in Sources */,
@@ -381,7 +399,9 @@
 				A35A68BC2CD1702400F955A2 /* FinancePaidCollectionViewCell.swift in Sources */,
 				A35A68AA2CD0F16900F955A2 /* FinanceAdModel.swift in Sources */,
 				A35A68C72CD1FDB200F955A2 /* FinanceDefaultHeaderView.swift in Sources */,
+				A3E82F722CD601E00070DDC8 /* LoginViewController.swift in Sources */,
 				A3E82F6C2CD5FF650070DDC8 /* UserLoginService.swift in Sources */,
+				A3E82F742CD601EA0070DDC8 /* LoginView.swift in Sources */,
 				A3042BB32CB802100012E684 /* SceneDelegate.swift in Sources */,
 				A3E82F652CD5FA160070DDC8 /* UserRegisterService.swift in Sources */,
 				A3730B102CD08F480075016D /* FinanceAppViewController.swift in Sources */,
