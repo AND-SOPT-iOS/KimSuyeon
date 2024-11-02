@@ -70,7 +70,7 @@ final class FinanceFreeCollectionViewCell: UICollectionViewCell {
 
 private extension FinanceFreeCollectionViewCell {
     func setUI() {
-        self.backgroundColor = .white
+        backgroundColor = .white
         contentView.addSubviews(appImage, rankingLabel, verticalStackView, downloadButton, border)
         verticalStackView.addArrangedSubviews(titleLabel, subtitleLabel)
     }
@@ -121,7 +121,7 @@ extension FinanceFreeCollectionViewCell {
             downloadButton.setTitle("업데이트", for: .normal)
         case .download:
             downloadButton.setTitle("받기", for: .normal)
-        case .paid(let price):
+        case .paid(_):
             break
         }
     }

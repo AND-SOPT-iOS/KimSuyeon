@@ -55,8 +55,8 @@ final class FinanceDefaultHeaderView: UICollectionReusableView {
 
 private extension FinanceDefaultHeaderView {
     func setUI() {
-        self.backgroundColor = .white
-        self.addSubviews(border, titleLabel, totalLabel)
+        backgroundColor = .white
+        addSubviews(border, titleLabel, totalLabel)
     }
     
     func setLayout() {

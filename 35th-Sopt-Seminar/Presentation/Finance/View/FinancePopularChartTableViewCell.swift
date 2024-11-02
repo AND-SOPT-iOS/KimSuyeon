@@ -70,7 +70,7 @@ final class FinancePopularChartTableViewCell: UITableViewCell {
 
 private extension FinancePopularChartTableViewCell {
     func setUI() {
-        self.backgroundColor = .white
+        backgroundColor = .white
         contentView.addSubviews(appImage, rankingLabel, verticalStackView, downloadButton, border)
         verticalStackView.addArrangedSubviews(titleLabel, subtitleLabel)
     }

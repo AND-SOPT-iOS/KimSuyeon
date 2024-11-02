@@ -13,17 +13,15 @@ final class FinanceAppViewController: UIViewController {
     
     private let rootView = FinanceAppView()
     
-    var adData = FinanceAdModel.mockAdData()
+    private var adData = FinanceAdModel.mockAdData()
     
-    var essentialData = FinanceEssentialModel.mockEssentialData()
+    private var essentialData = FinanceEssentialModel.mockEssentialData()
     
-    var paidData = FinancePaidModel.mockPaidData()
+    private var paidData = FinancePaidModel.mockPaidData()
     
-    var freeData = FinanceFreeModel.mockFreeData()
+    private var freeData = FinanceFreeModel.mockFreeData()
     
-    override func loadView() {
-        super.loadView()
-        
+    override func loadView() {        
         self.view = rootView
     }
     

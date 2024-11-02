@@ -14,8 +14,6 @@ final class FinancePopularChartViewController: UIViewController {
     private let appList = FinancePopularModel.mockPopularData()
     
     override func loadView() {
-        super.loadView()
-        
         self.view = rootView
     }
     

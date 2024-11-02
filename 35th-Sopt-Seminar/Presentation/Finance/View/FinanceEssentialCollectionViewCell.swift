@@ -65,7 +65,7 @@ final class FinanceEssentialCollectionViewCell: UICollectionViewCell {
 
 private extension FinanceEssentialCollectionViewCell {
     func setUI() {
-        self.backgroundColor = .white
+        backgroundColor = .white
         contentView.addSubviews(appImage, verticalStackView, downloadButton, border)
         verticalStackView.addArrangedSubviews(titleLabel, subtitleLabel)
     }

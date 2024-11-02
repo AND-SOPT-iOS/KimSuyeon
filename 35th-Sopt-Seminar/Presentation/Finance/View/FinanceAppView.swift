@@ -31,7 +31,7 @@ final class FinanceAppView: UIView {
 
 private extension FinanceAppView {
     func setUI() {
-        self.addSubview(collectionView)
+        addSubview(collectionView)
     }
     
     func setLayout() {

@@ -32,8 +32,8 @@ final class FinancePopularChartView: UIView {
 
 private extension FinancePopularChartView {
     func setUI() {
-        self.backgroundColor = .white
-        self.addSubview(tableView)
+        backgroundColor = .white
+        addSubview(tableView)
     }
     
     func setLayout() {

@@ -48,7 +48,7 @@ final class FinanceAdCollectionViewCell: UICollectionViewCell {
 
 private extension FinanceAdCollectionViewCell {
     func setUI() {
-        self.backgroundColor = .white
+        backgroundColor = .white
         contentView.addSubviews(categoryLabel, titleLabel, subtitleLabel, adImage)
     }
     
