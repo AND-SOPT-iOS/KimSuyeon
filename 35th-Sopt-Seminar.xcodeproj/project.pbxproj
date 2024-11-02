@@ -42,6 +42,7 @@
 		A3730B102CD08F480075016D /* FinanceAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3730B0F2CD08F480075016D /* FinanceAppViewController.swift */; };
 		A3E82F592CD5F1260070DDC8 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A3E82F582CD5F1260070DDC8 /* Alamofire */; };
 		A3E82F5D2CD5F3930070DDC8 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E82F5C2CD5F3930070DDC8 /* Environment.swift */; };
+		A3E82F5F2CD5F3D20070DDC8 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E82F5E2CD5F3D20070DDC8 /* NetworkError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +81,7 @@
 		A3730B0F2CD08F480075016D /* FinanceAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceAppViewController.swift; sourceTree = "<group>"; };
 		A3E82F5B2CD5F2780070DDC8 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		A3E82F5C2CD5F3930070DDC8 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		A3E82F5E2CD5F3D20070DDC8 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				A3E82F5C2CD5F3930070DDC8 /* Environment.swift */,
+				A3E82F5E2CD5F3D20070DDC8 /* NetworkError.swift */,
 				A3E82F5B2CD5F2780070DDC8 /* Config.xcconfig */,
 			);
 			path = Network;
@@ -331,6 +334,7 @@
 				A3730B012CD085A00075016D /* TodayViewController.swift in Sources */,
 				A37050452CD21A2D00C8E163 /* FinancePopularChartTableViewCell.swift in Sources */,
 				A35A68C02CD174FF00F955A2 /* FinanceFreeCollectionViewCell.swift in Sources */,
+				A3E82F5F2CD5F3D20070DDC8 /* NetworkError.swift in Sources */,
 				A3730B052CD086090075016D /* ArcadeViewController.swift in Sources */,
 				A35A68B62CD14EB300F955A2 /* FinanceAdHeaderView.swift in Sources */,
 				A35A68B82CD1549E00F955A2 /* UIStackView+.swift in Sources */,
