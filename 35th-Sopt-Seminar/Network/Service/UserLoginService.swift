@@ -10,13 +10,13 @@ import Alamofire
 
 class UserLoginService {
 
-  func register(
+  func login(
     username: String,
     password: String,
     completion: @escaping (Result<Bool, NetworkError>) -> Void
   ) {
 
-    let url = Environment.baseURL + "/user"
+    let url = Environment.baseURL + "/login"
 
     let parameters = UserLoginRequest(
       username: username,
