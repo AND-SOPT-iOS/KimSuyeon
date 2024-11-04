@@ -15,11 +15,11 @@ final class FinanceAppViewController: UIViewController {
     
     private var adData = FinanceAdModel.mockAdData()
     
-    private var essentialData = FinanceEssentialModel.mockEssentialData()
+    private var essentialData = App.mockEssentialData()
     
-    private var paidData = FinancePaidModel.mockPaidData()
+    private var paidData = App.mockPaidData()
     
-    private var freeData = FinanceFreeModel.mockFreeData()
+    private var freeData = App.mockFreeData()
     
     override func loadView() {        
         self.view = rootView
@@ -43,18 +43,8 @@ final class FinanceAppViewController: UIViewController {
         )
         
         rootView.collectionView.register(
-            FinanceEssentialCollectionViewCell.self,
-            forCellWithReuseIdentifier: "FinanceEssentialCollectionViewCell"
-        )
-        
-        rootView.collectionView.register(
-            FinancePaidCollectionViewCell.self,
-            forCellWithReuseIdentifier: "FinancePaidCollectionViewCell"
-        )
-        
-        rootView.collectionView.register(
-            FinanceFreeCollectionViewCell.self,
-            forCellWithReuseIdentifier: "FinanceFreeCollectionViewCell"
+            FinanceCollectionViewCell.self,
+            forCellWithReuseIdentifier: "FinanceCollectionViewCell"
         )
         
         rootView.collectionView.register(
@@ -101,25 +91,25 @@ extension FinanceAppViewController: UICollectionViewDataSource {
             return cell
         case 1:
             guard let cell = collectionView.dequeueReusableCell(
-                withReuseIdentifier: FinanceEssentialCollectionViewCell.identifier,
+                withReuseIdentifier: FinanceCollectionViewCell.identifier,
                 for: indexPath
-            ) as? FinanceEssentialCollectionViewCell else { return UICollectionViewCell() }
+            ) as? FinanceCollectionViewCell else { return UICollectionViewCell() }
             cell.dataBind(essentialData[indexPath.item])
             cell.border.isHidden = (indexPath.item + 1) % 3 == 0
             return cell
         case 2:
             guard let cell = collectionView.dequeueReusableCell(
-                withReuseIdentifier: FinancePaidCollectionViewCell.identifier,
+                withReuseIdentifier: FinanceCollectionViewCell.identifier,
                 for: indexPath
-            ) as? FinancePaidCollectionViewCell else { return UICollectionViewCell() }
+            ) as? FinanceCollectionViewCell else { return UICollectionViewCell() }
             cell.dataBind(paidData[indexPath.item])
             cell.border.isHidden = (indexPath.item + 1) % 3 == 0
             return cell
         case 3:
             guard let cell = collectionView.dequeueReusableCell(
-                withReuseIdentifier: FinanceFreeCollectionViewCell.identifier,
+                withReuseIdentifier: FinanceCollectionViewCell.identifier,
                 for: indexPath
-            ) as? FinanceFreeCollectionViewCell else { return UICollectionViewCell() }
+            ) as? FinanceCollectionViewCell else { return UICollectionViewCell() }
             cell.dataBind(freeData[indexPath.item])
             cell.border.isHidden = (indexPath.item + 1) % 3 == 0
             return cell

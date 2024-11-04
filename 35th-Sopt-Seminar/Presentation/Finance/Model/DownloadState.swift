@@ -11,5 +11,5 @@ enum DownloadState {
     case installed
     case update
     case download
-    case paid(price: Int)
+    case paid(price: Int = 0)
 }

@@ -1,23 +1,29 @@
 //
-//  FinancePaidCollectionViewCell.swift
+//  FinanceCollectionViewCell.swift
 //  35th-Sopt-Seminar
 //
-//  Created by 예삐 on 10/30/24.
+//  Created by 예삐 on 11/4/24.
 //
 
 import UIKit
 import SnapKit
 import Then
 
-final class FinancePaidCollectionViewCell: UICollectionViewCell {
+final class FinanceCollectionViewCell: UICollectionViewCell {
     
-    static let identifier = "FinancePaidCollectionViewCell"
+    static let identifier = "FinanceCollectionViewCell"
     
     private let appImage = UIImageView().then {
         $0.layer.borderWidth = 1
         $0.layer.borderColor = UIColor.systemGray4.cgColor
         $0.layer.cornerRadius = 16
         $0.clipsToBounds = true
+    }
+    
+    private let horizontalStackView = UIStackView().then {
+        $0.axis = .horizontal
+        $0.alignment = .top
+        $0.spacing = 16
     }
     
     private let rankingLabel = UILabel().then {
@@ -67,10 +73,11 @@ final class FinancePaidCollectionViewCell: UICollectionViewCell {
     }
 }
 
-private extension FinancePaidCollectionViewCell {
+private extension FinanceCollectionViewCell {
     func setUI() {
         backgroundColor = .white
-        contentView.addSubviews(appImage, rankingLabel, verticalStackView, downloadButton, border)
+        contentView.addSubviews(appImage, horizontalStackView, downloadButton, border)
+        horizontalStackView.addArrangedSubviews(rankingLabel, verticalStackView)
         verticalStackView.addArrangedSubviews(titleLabel, subtitleLabel)
     }
     
@@ -81,14 +88,9 @@ private extension FinancePaidCollectionViewCell {
             $0.size.equalTo(62)
         }
         
-        rankingLabel.snp.makeConstraints {
-            $0.top.equalTo(verticalStackView.snp.top)
-            $0.leading.equalTo(appImage.snp.trailing).offset(12)
-        }
-        
-        verticalStackView.snp.makeConstraints {
+        horizontalStackView.snp.makeConstraints {
             $0.centerY.equalTo(appImage.snp.centerY)
-            $0.leading.equalTo(rankingLabel.snp.trailing).offset(16)
+            $0.leading.equalTo(appImage.snp.trailing).offset(12)
             $0.trailing.equalTo(downloadButton.snp.leading).offset(-8)
         }
         
@@ -107,10 +109,15 @@ private extension FinancePaidCollectionViewCell {
     }
 }
 
-extension FinancePaidCollectionViewCell {
-    func dataBind(_ mockData: FinancePaidModel) {
+extension FinanceCollectionViewCell {
+    func dataBind(_ mockData: App) {
         appImage.image = mockData.appImage
-        rankingLabel.text = mockData.ranking.description
+        if let ranking = mockData.ranking {
+            rankingLabel.text = ranking.description
+            rankingLabel.isHidden = false
+        } else {
+            rankingLabel.isHidden = true
+        }
         titleLabel.text = mockData.title
         subtitleLabel.text = mockData.subtitle
         switch mockData.downloadState {
