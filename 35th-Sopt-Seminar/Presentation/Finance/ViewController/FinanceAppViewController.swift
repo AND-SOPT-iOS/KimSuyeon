@@ -48,12 +48,6 @@ final class FinanceAppViewController: UIViewController {
         )
         
         rootView.collectionView.register(
-            FinanceRecommendedHeaderView.self,
-            forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
-            withReuseIdentifier: FinanceRecommendedHeaderView.identifier
-        )
-        
-        rootView.collectionView.register(
             FinanceHeaderView.self,
             forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
             withReuseIdentifier: FinanceHeaderView.identifier
@@ -126,9 +120,9 @@ extension FinanceAppViewController: UICollectionViewDataSource {
             case 1:
                 guard let header = collectionView.dequeueReusableSupplementaryView(
                     ofKind: kind,
-                    withReuseIdentifier: FinanceRecommendedHeaderView.identifier,
+                    withReuseIdentifier: FinanceHeaderView.identifier,
                     for: indexPath
-                ) as? FinanceRecommendedHeaderView else { return UICollectionReusableView() }
+                ) as? FinanceHeaderView else { return UICollectionReusableView() }
                 header.configureHeader(title: "필수 금융 앱", subtitle: "App Store 에디터가 직접 골랐습니다")
                 return header
             case 2:
@@ -137,7 +131,7 @@ extension FinanceAppViewController: UICollectionViewDataSource {
                     withReuseIdentifier: FinanceHeaderView.identifier,
                     for: indexPath
                 ) as? FinanceHeaderView else { return UICollectionReusableView() }
-                header.configureHeader(title: "유료 순위")
+                header.configureHeader(title: "유료 순위", subtitle: nil)
                 header.didTapTotalLabel = { [weak self] in
                     let viewController = FinancePopularChartViewController()
                     self?.navigationController?.pushViewController(viewController, animated: true)
@@ -149,7 +143,7 @@ extension FinanceAppViewController: UICollectionViewDataSource {
                     withReuseIdentifier: FinanceHeaderView.identifier,
                     for: indexPath
                 ) as? FinanceHeaderView else { return UICollectionReusableView() }
-                header.configureHeader(title: "무료 순위")
+                header.configureHeader(title: "무료 순위", subtitle: nil)
                 header.didTapTotalLabel = { [weak self] in
                     let viewController = FinancePopularChartViewController()
                     self?.navigationController?.pushViewController(viewController, animated: true)

@@ -1,5 +1,5 @@
 //
-//  FinanceDefaultHeaderView.swift
+//  FinanceAdHeaderView.swift
 //  35th-Sopt-Seminar
 //
 //  Created by 예삐 on 10/30/24.
@@ -24,11 +24,15 @@ final class FinanceHeaderView: UICollectionReusableView {
         $0.font = .systemFont(ofSize: 20, weight: .semibold)
     }
     
-    private let totalLabel = UILabel().then {
+    private let subtitleLabel = UILabel().then {
+        $0.textColor = .systemGray
+        $0.font = .systemFont(ofSize: 14, weight: .regular)
+    }
+    
+    let totalLabel = UILabel().then {
         $0.text = "모두 보기"
         $0.textColor = .systemBlue
         $0.font = .systemFont(ofSize: 16, weight: .regular)
-        $0.isUserInteractionEnabled = true
     }
     
     override init(frame: CGRect) {
@@ -36,7 +40,6 @@ final class FinanceHeaderView: UICollectionReusableView {
         
         setUI()
         setLayout()
-        setupGesture()
     }
     
     required init?(coder: NSCoder) {
@@ -51,12 +54,13 @@ final class FinanceHeaderView: UICollectionReusableView {
     @objc private func totalLabelTapped() {
         didTapTotalLabel?()
     }
+    
 }
 
 private extension FinanceHeaderView {
     func setUI() {
         backgroundColor = .white
-        addSubviews(border, titleLabel, totalLabel)
+        addSubviews(border, titleLabel, subtitleLabel, totalLabel)
     }
     
     func setLayout() {
@@ -70,6 +74,11 @@ private extension FinanceHeaderView {
             $0.leading.equalToSuperview()
         }
         
+        subtitleLabel.snp.makeConstraints {
+            $0.top.equalTo(titleLabel.snp.bottom).offset(4)
+            $0.leading.equalToSuperview()
+        }
+        
         totalLabel.snp.makeConstraints {
             $0.centerY.equalTo(titleLabel.snp.centerY)
             $0.trailing.equalToSuperview()
@@ -78,7 +87,12 @@ private extension FinanceHeaderView {
 }
 
 extension FinanceHeaderView {
-    func configureHeader(title: String) {
+    func configureHeader(title: String, subtitle: String?) {
         titleLabel.text = title
+        if let subtitle {
+            subtitleLabel.text = subtitle
+        } else {
+            subtitleLabel.isHidden = true
+        }
     }
 }
