@@ -13,13 +13,13 @@ final class FinanceAppViewController: UIViewController {
     
     private let rootView = FinanceAppView()
     
-    private var adData = FinanceAdModel.mockAdData()
+    private var recommendedData = FinanceAppModel.mockRecommendedData()
     
-    private var essentialData = App.mockEssentialData()
+    private var essentialData = FinanceAppModel.mockEssentialData()
     
-    private var paidData = App.mockPaidData()
+    private var paidData = FinanceAppModel.mockPaidData()
     
-    private var freeData = App.mockFreeData()
+    private var freeData = FinanceAppModel.mockFreeData()
     
     override func loadView() {        
         self.view = rootView
@@ -38,8 +38,8 @@ final class FinanceAppViewController: UIViewController {
     
     private func register() {
         rootView.collectionView.register(
-            FinanceAdCollectionViewCell.self,
-            forCellWithReuseIdentifier: "FinanceAdCollectionViewCell"
+            FinanceRecommendedCollectionViewCell.self,
+            forCellWithReuseIdentifier: "FinanceRecommendedCollectionViewCell"
         )
         
         rootView.collectionView.register(
@@ -73,7 +73,7 @@ extension FinanceAppViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch section {
         case 0:
-            return adData.count
+            return recommendedData.count
         default:
             return 9
         }
@@ -84,10 +84,10 @@ extension FinanceAppViewController: UICollectionViewDataSource {
         switch indexPath.section {
         case 0:
             guard let cell = collectionView.dequeueReusableCell(
-                withReuseIdentifier: FinanceAdCollectionViewCell.identifier,
+                withReuseIdentifier: FinanceRecommendedCollectionViewCell.identifier,
                 for: indexPath
-            ) as? FinanceAdCollectionViewCell else { return UICollectionViewCell() }
-            cell.dataBind(adData[indexPath.item])
+            ) as? FinanceRecommendedCollectionViewCell else { return UICollectionViewCell() }
+            cell.dataBind(recommendedData[indexPath.item])
             return cell
         case 1:
             guard let cell = collectionView.dequeueReusableCell(
@@ -114,7 +114,7 @@ extension FinanceAppViewController: UICollectionViewDataSource {
             cell.border.isHidden = (indexPath.item + 1) % 3 == 0
             return cell
         default:
-            return FinanceAdCollectionViewCell()
+            return FinanceRecommendedCollectionViewCell()
         }
     }
     

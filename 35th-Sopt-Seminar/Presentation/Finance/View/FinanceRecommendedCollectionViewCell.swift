@@ -9,9 +9,9 @@ import UIKit
 import SnapKit
 import Then
 
-final class FinanceAdCollectionViewCell: UICollectionViewCell {
+final class FinanceRecommendedCollectionViewCell: UICollectionViewCell {
     
-    static let identifier = "FinanceAdCollectionViewCell"
+    static let identifier = "FinanceRecommendedCollectionViewCell"
     
     private let categoryLabel = UILabel().then {
         $0.textColor = .systemBlue
@@ -45,7 +45,7 @@ final class FinanceAdCollectionViewCell: UICollectionViewCell {
     }
 }
 
-private extension FinanceAdCollectionViewCell {
+private extension FinanceRecommendedCollectionViewCell {
     func setUI() {
         backgroundColor = .white
         contentView.addSubviews(categoryLabel, titleLabel, subtitleLabel, adImage)
@@ -74,8 +74,8 @@ private extension FinanceAdCollectionViewCell {
     }
 }
 
-extension FinanceAdCollectionViewCell {
-    func dataBind(_ mockData: FinanceAdModel) {
+extension FinanceRecommendedCollectionViewCell {
+    func dataBind(_ mockData: RecommendedApp) {
         categoryLabel.text = mockData.category
         titleLabel.text = mockData.title
         subtitleLabel.text = mockData.subtitle
