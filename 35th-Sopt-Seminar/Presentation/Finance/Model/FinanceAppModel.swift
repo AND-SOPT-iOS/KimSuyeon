@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class FinanceAppModel {
+struct FinanceAppModel {
     
     /// 추천
     static func mockRecommendedData() -> [RecommendedApp] {

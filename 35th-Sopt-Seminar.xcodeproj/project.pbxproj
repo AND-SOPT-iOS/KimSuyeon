@@ -28,7 +28,7 @@
 		A37050412CD20FC700C8E163 /* FinancePopularChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37050402CD20FC700C8E163 /* FinancePopularChartViewController.swift */; };
 		A37050432CD215A100C8E163 /* FinancePopularChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37050422CD215A100C8E163 /* FinancePopularChartView.swift */; };
 		A37050452CD21A2D00C8E163 /* FinancePopularChartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37050442CD21A2D00C8E163 /* FinancePopularChartTableViewCell.swift */; };
-		A37050472CD21C6300C8E163 /* FinancePopularModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37050462CD21C6300C8E163 /* FinancePopularModel.swift */; };
+		A37050472CD21C6300C8E163 /* FinancePopularChartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37050462CD21C6300C8E163 /* FinancePopularChartModel.swift */; };
 		A3730AFD2CD070CF0075016D /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3730AFC2CD070CF0075016D /* MainTabBarController.swift */; };
 		A3730AFF2CD0810F0075016D /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3730AFE2CD0810F0075016D /* AppViewController.swift */; };
 		A3730B012CD085A00075016D /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3730B002CD085A00075016D /* TodayViewController.swift */; };
@@ -61,7 +61,7 @@
 		A37050402CD20FC700C8E163 /* FinancePopularChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancePopularChartViewController.swift; sourceTree = "<group>"; };
 		A37050422CD215A100C8E163 /* FinancePopularChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancePopularChartView.swift; sourceTree = "<group>"; };
 		A37050442CD21A2D00C8E163 /* FinancePopularChartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancePopularChartTableViewCell.swift; sourceTree = "<group>"; };
-		A37050462CD21C6300C8E163 /* FinancePopularModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancePopularModel.swift; sourceTree = "<group>"; };
+		A37050462CD21C6300C8E163 /* FinancePopularChartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancePopularChartModel.swift; sourceTree = "<group>"; };
 		A3730AFC2CD070CF0075016D /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		A3730AFE2CD0810F0075016D /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
 		A3730B002CD085A00075016D /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
@@ -172,7 +172,7 @@
 				A36347BF2CD8D3C0003B5322 /* RecommendedApp.swift */,
 				A370503E2CD20B2300C8E163 /* DownloadState.swift */,
 				A36347BB2CD8CBDA003B5322 /* FinanceAppModel.swift */,
-				A37050462CD21C6300C8E163 /* FinancePopularModel.swift */,
+				A37050462CD21C6300C8E163 /* FinancePopularChartModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -309,7 +309,7 @@
 				A35A68B62CD14EB300F955A2 /* FinanceAdHeaderView.swift in Sources */,
 				A35A68B82CD1549E00F955A2 /* UIStackView+.swift in Sources */,
 				A35A68A82CD0E96D00F955A2 /* FinanceRecommendedCollectionViewCell.swift in Sources */,
-				A37050472CD21C6300C8E163 /* FinancePopularModel.swift in Sources */,
+				A37050472CD21C6300C8E163 /* FinancePopularChartModel.swift in Sources */,
 				A37050412CD20FC700C8E163 /* FinancePopularChartViewController.swift in Sources */,
 				A3042BB12CB802100012E684 /* AppDelegate.swift in Sources */,
 				A35A68AE2CD1182800F955A2 /* FinanceCompositionalFactory.swift in Sources */,
