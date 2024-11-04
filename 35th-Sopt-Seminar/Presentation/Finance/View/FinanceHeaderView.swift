@@ -33,6 +33,7 @@ final class FinanceHeaderView: UICollectionReusableView {
         $0.text = "모두 보기"
         $0.textColor = .systemBlue
         $0.font = .systemFont(ofSize: 16, weight: .regular)
+        $0.isUserInteractionEnabled = true
     }
     
     override init(frame: CGRect) {
@@ -40,6 +41,7 @@ final class FinanceHeaderView: UICollectionReusableView {
         
         setUI()
         setLayout()
+        setupGesture()
     }
     
     required init?(coder: NSCoder) {
@@ -47,14 +49,14 @@ final class FinanceHeaderView: UICollectionReusableView {
     }
     
     private func setupGesture() {
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(totalLabelTapped))
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(totalLabelDidTap))
         totalLabel.addGestureRecognizer(tapGesture)
     }
     
-    @objc private func totalLabelTapped() {
+    @objc
+    private func totalLabelDidTap() {
         didTapTotalLabel?()
     }
-    
 }
 
 private extension FinanceHeaderView {
