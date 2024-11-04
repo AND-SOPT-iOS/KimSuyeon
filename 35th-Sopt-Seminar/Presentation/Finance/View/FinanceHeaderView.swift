@@ -9,9 +9,9 @@ import UIKit
 import SnapKit
 import Then
 
-final class FinanceDefaultHeaderView: UICollectionReusableView {
+final class FinanceHeaderView: UICollectionReusableView {
     
-    static let identifier = "FinanceDefaultHeaderView"
+    static let identifier = "FinanceHeaderView"
     
     var didTapTotalLabel: (() -> Void)?
     
@@ -53,7 +53,7 @@ final class FinanceDefaultHeaderView: UICollectionReusableView {
     }
 }
 
-private extension FinanceDefaultHeaderView {
+private extension FinanceHeaderView {
     func setUI() {
         backgroundColor = .white
         addSubviews(border, titleLabel, totalLabel)
@@ -77,7 +77,7 @@ private extension FinanceDefaultHeaderView {
     }
 }
 
-extension FinanceDefaultHeaderView {
+extension FinanceHeaderView {
     func configureHeader(title: String) {
         titleLabel.text = title
     }

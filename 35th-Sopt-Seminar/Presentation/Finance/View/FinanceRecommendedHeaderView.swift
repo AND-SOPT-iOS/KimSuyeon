@@ -9,9 +9,9 @@ import UIKit
 import SnapKit
 import Then
 
-final class FinanceAdHeaderView: UICollectionReusableView {
+final class FinanceRecommendedHeaderView: UICollectionReusableView {
     
-    static let identifier = "FinanceAdHeaderView"
+    static let identifier = "FinanceRecommendedHeaderView"
     
     private let border = UIView().then {
         $0.backgroundColor = .systemGray5
@@ -45,7 +45,7 @@ final class FinanceAdHeaderView: UICollectionReusableView {
     }
 }
 
-private extension FinanceAdHeaderView {
+private extension FinanceRecommendedHeaderView {
     func setUI() {
         backgroundColor = .white
         addSubviews(border, titleLabel, subtitleLabel, totalLabel)
@@ -74,7 +74,7 @@ private extension FinanceAdHeaderView {
     }
 }
 
-extension FinanceAdHeaderView {
+extension FinanceRecommendedHeaderView {
     func configureHeader(title: String, subtitle: String) {
         titleLabel.text = title
         subtitleLabel.text = subtitle
