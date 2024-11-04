@@ -110,7 +110,12 @@ private extension FinancePopularChartTableViewCell {
 extension FinancePopularChartTableViewCell {
     func dataBind(_ mockData: App) {
         appImage.image = mockData.appImage
-        rankingLabel.text = mockData.ranking?.description
+        if let ranking = mockData.ranking {
+            rankingLabel.text = ranking.description
+            rankingLabel.isHidden = false
+        } else {
+            rankingLabel.isHidden = true
+        }
         titleLabel.text = mockData.title
         subtitleLabel.text = mockData.subtitle
         switch mockData.downloadState {
