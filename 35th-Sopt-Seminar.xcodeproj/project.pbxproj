@@ -9,21 +9,65 @@
 /* Begin PBXBuildFile section */
 		A3042BB12CB802100012E684 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3042BB02CB802100012E684 /* AppDelegate.swift */; };
 		A3042BB32CB802100012E684 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3042BB22CB802100012E684 /* SceneDelegate.swift */; };
-		A3042BB52CB802100012E684 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3042BB42CB802100012E684 /* ViewController.swift */; };
 		A3042BB82CB802100012E684 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A3042BB72CB802100012E684 /* Base */; };
 		A3042BBA2CB802150012E684 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3042BB92CB802150012E684 /* Assets.xcassets */; };
 		A3042BBD2CB802150012E684 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A3042BBC2CB802150012E684 /* Base */; };
+		A3042BCE2CB80CD80012E684 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A3042BCD2CB80CD80012E684 /* SnapKit */; };
+		A3042BD12CB80CDF0012E684 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = A3042BD02CB80CDF0012E684 /* Then */; };
+		A35A68A82CD0E96D00F955A2 /* FinanceRecommendedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35A68A72CD0E96D00F955A2 /* FinanceRecommendedCollectionViewCell.swift */; };
+		A35A68AE2CD1182800F955A2 /* FinanceCompositionalFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35A68AD2CD1182800F955A2 /* FinanceCompositionalFactory.swift */; };
+		A35A68B02CD11B7900F955A2 /* FinanceAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35A68AF2CD11B7900F955A2 /* FinanceAppView.swift */; };
+		A35A68B62CD14EB300F955A2 /* FinanceHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35A68B52CD14EB300F955A2 /* FinanceHeaderView.swift */; };
+		A35A68B82CD1549E00F955A2 /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35A68B72CD1549E00F955A2 /* UIStackView+.swift */; };
+		A36347B82CD8CAA2003B5322 /* FinanceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36347B72CD8CAA2003B5322 /* FinanceCollectionViewCell.swift */; };
+		A36347BA2CD8CB41003B5322 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36347B92CD8CB41003B5322 /* App.swift */; };
+		A36347BC2CD8CBDA003B5322 /* FinanceAppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36347BB2CD8CBDA003B5322 /* FinanceAppModel.swift */; };
+		A36347C02CD8D3C0003B5322 /* RecommendedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36347BF2CD8D3C0003B5322 /* RecommendedApp.swift */; };
+		A370503F2CD20B2300C8E163 /* DownloadState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A370503E2CD20B2300C8E163 /* DownloadState.swift */; };
+		A37050412CD20FC700C8E163 /* FinancePopularChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37050402CD20FC700C8E163 /* FinancePopularChartViewController.swift */; };
+		A37050432CD215A100C8E163 /* FinancePopularChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37050422CD215A100C8E163 /* FinancePopularChartView.swift */; };
+		A37050452CD21A2D00C8E163 /* FinancePopularChartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37050442CD21A2D00C8E163 /* FinancePopularChartTableViewCell.swift */; };
+		A37050472CD21C6300C8E163 /* FinancePopularChartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37050462CD21C6300C8E163 /* FinancePopularChartModel.swift */; };
+		A3730AFD2CD070CF0075016D /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3730AFC2CD070CF0075016D /* MainTabBarController.swift */; };
+		A3730AFF2CD0810F0075016D /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3730AFE2CD0810F0075016D /* AppViewController.swift */; };
+		A3730B012CD085A00075016D /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3730B002CD085A00075016D /* TodayViewController.swift */; };
+		A3730B032CD085E90075016D /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3730B022CD085E90075016D /* GameViewController.swift */; };
+		A3730B052CD086090075016D /* ArcadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3730B042CD086090075016D /* ArcadeViewController.swift */; };
+		A3730B072CD086230075016D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3730B062CD086230075016D /* SearchViewController.swift */; };
+		A3730B0E2CD08E9C0075016D /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3730B0D2CD08E9C0075016D /* UIView+.swift */; };
+		A3730B102CD08F480075016D /* FinanceAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3730B0F2CD08F480075016D /* FinanceAppViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A3042BAD2CB802100012E684 /* 35th-Sopt-Seminar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "35th-Sopt-Seminar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3042BB02CB802100012E684 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3042BB22CB802100012E684 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A3042BB42CB802100012E684 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A3042BB72CB802100012E684 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A3042BB92CB802150012E684 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3042BBC2CB802150012E684 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3042BBE2CB802150012E684 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A35A68A72CD0E96D00F955A2 /* FinanceRecommendedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceRecommendedCollectionViewCell.swift; sourceTree = "<group>"; };
+		A35A68AD2CD1182800F955A2 /* FinanceCompositionalFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceCompositionalFactory.swift; sourceTree = "<group>"; };
+		A35A68AF2CD11B7900F955A2 /* FinanceAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceAppView.swift; sourceTree = "<group>"; };
+		A35A68B52CD14EB300F955A2 /* FinanceHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceHeaderView.swift; sourceTree = "<group>"; };
+		A35A68B72CD1549E00F955A2 /* UIStackView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
+		A36347B72CD8CAA2003B5322 /* FinanceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceCollectionViewCell.swift; sourceTree = "<group>"; };
+		A36347B92CD8CB41003B5322 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		A36347BB2CD8CBDA003B5322 /* FinanceAppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceAppModel.swift; sourceTree = "<group>"; };
+		A36347BF2CD8D3C0003B5322 /* RecommendedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedApp.swift; sourceTree = "<group>"; };
+		A370503E2CD20B2300C8E163 /* DownloadState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadState.swift; sourceTree = "<group>"; };
+		A37050402CD20FC700C8E163 /* FinancePopularChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancePopularChartViewController.swift; sourceTree = "<group>"; };
+		A37050422CD215A100C8E163 /* FinancePopularChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancePopularChartView.swift; sourceTree = "<group>"; };
+		A37050442CD21A2D00C8E163 /* FinancePopularChartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancePopularChartTableViewCell.swift; sourceTree = "<group>"; };
+		A37050462CD21C6300C8E163 /* FinancePopularChartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancePopularChartModel.swift; sourceTree = "<group>"; };
+		A3730AFC2CD070CF0075016D /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		A3730AFE2CD0810F0075016D /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
+		A3730B002CD085A00075016D /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		A3730B022CD085E90075016D /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		A3730B042CD086090075016D /* ArcadeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcadeViewController.swift; sourceTree = "<group>"; };
+		A3730B062CD086230075016D /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		A3730B0D2CD08E9C0075016D /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIView+.swift"; path = "35th-Sopt-Seminar/Resource/Extension/UIView+.swift"; sourceTree = SOURCE_ROOT; };
+		A3730B0F2CD08F480075016D /* FinanceAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceAppViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +75,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3042BCE2CB80CD80012E684 /* SnapKit in Frameworks */,
+				A3042BD12CB80CDF0012E684 /* Then in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +102,116 @@
 		A3042BAF2CB802100012E684 /* 35th-Sopt-Seminar */ = {
 			isa = PBXGroup;
 			children = (
-				A3042BB02CB802100012E684 /* AppDelegate.swift */,
-				A3042BB22CB802100012E684 /* SceneDelegate.swift */,
-				A3042BB42CB802100012E684 /* ViewController.swift */,
-				A3042BB62CB802100012E684 /* Main.storyboard */,
-				A3042BB92CB802150012E684 /* Assets.xcassets */,
-				A3042BBB2CB802150012E684 /* LaunchScreen.storyboard */,
-				A3042BBE2CB802150012E684 /* Info.plist */,
+				A3730B0A2CD089F50075016D /* Resource */,
+				A3730B082CD089CC0075016D /* Application */,
+				A3730B0B2CD08A500075016D /* Presentation */,
 			);
 			path = "35th-Sopt-Seminar";
+			sourceTree = "<group>";
+		};
+		A35A68A52CD0BBC200F955A2 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				A3730B002CD085A00075016D /* TodayViewController.swift */,
+				A3730B022CD085E90075016D /* GameViewController.swift */,
+				A3730AFE2CD0810F0075016D /* AppViewController.swift */,
+				A3730B042CD086090075016D /* ArcadeViewController.swift */,
+				A3730B062CD086230075016D /* SearchViewController.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		A35A68C12CD1776200F955A2 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A3730AFC2CD070CF0075016D /* MainTabBarController.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A35A68C22CD1776F00F955A2 /* Finance */ = {
+			isa = PBXGroup;
+			children = (
+				A35A68C42CD1778600F955A2 /* ViewController */,
+				A35A68C32CD1778000F955A2 /* View */,
+				A35A68C52CD1778D00F955A2 /* Model */,
+				A35A68AD2CD1182800F955A2 /* FinanceCompositionalFactory.swift */,
+			);
+			path = Finance;
+			sourceTree = "<group>";
+		};
+		A35A68C32CD1778000F955A2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A35A68AF2CD11B7900F955A2 /* FinanceAppView.swift */,
+				A37050422CD215A100C8E163 /* FinancePopularChartView.swift */,
+				A35A68B52CD14EB300F955A2 /* FinanceHeaderView.swift */,
+				A36347B72CD8CAA2003B5322 /* FinanceCollectionViewCell.swift */,
+				A35A68A72CD0E96D00F955A2 /* FinanceRecommendedCollectionViewCell.swift */,
+				A37050442CD21A2D00C8E163 /* FinancePopularChartTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A35A68C42CD1778600F955A2 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A3730B0F2CD08F480075016D /* FinanceAppViewController.swift */,
+				A37050402CD20FC700C8E163 /* FinancePopularChartViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A35A68C52CD1778D00F955A2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A36347B92CD8CB41003B5322 /* App.swift */,
+				A36347BF2CD8D3C0003B5322 /* RecommendedApp.swift */,
+				A370503E2CD20B2300C8E163 /* DownloadState.swift */,
+				A36347BB2CD8CBDA003B5322 /* FinanceAppModel.swift */,
+				A37050462CD21C6300C8E163 /* FinancePopularChartModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A3730B082CD089CC0075016D /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A3042BB02CB802100012E684 /* AppDelegate.swift */,
+				A3042BB22CB802100012E684 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		A3730B0A2CD089F50075016D /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				A3730B0C2CD08E800075016D /* Extension */,
+				A3042BB62CB802100012E684 /* Main.storyboard */,
+				A3042BBB2CB802150012E684 /* LaunchScreen.storyboard */,
+				A3042BB92CB802150012E684 /* Assets.xcassets */,
+				A3042BBE2CB802150012E684 /* Info.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		A3730B0B2CD08A500075016D /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				A35A68C12CD1776200F955A2 /* Core */,
+				A35A68A52CD0BBC200F955A2 /* Menu */,
+				A35A68C22CD1776F00F955A2 /* Finance */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		A3730B0C2CD08E800075016D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A3730B0D2CD08E9C0075016D /* UIView+.swift */,
+				A35A68B72CD1549E00F955A2 /* UIStackView+.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +230,10 @@
 			dependencies = (
 			);
 			name = "35th-Sopt-Seminar";
+			packageProductDependencies = (
+				A3042BCD2CB80CD80012E684 /* SnapKit */,
+				A3042BD02CB80CDF0012E684 /* Then */,
+			);
 			productName = "35th-Sopt-Seminar";
 			productReference = A3042BAD2CB802100012E684 /* 35th-Sopt-Seminar.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +262,10 @@
 				Base,
 			);
 			mainGroup = A3042BA42CB8020F0012E684;
+			packageReferences = (
+				A3042BCC2CB80CD80012E684 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				A3042BCF2CB80CDF0012E684 /* XCRemoteSwiftPackageReference "Then" */,
+			);
 			productRefGroup = A3042BAE2CB802100012E684 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +293,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3042BB52CB802100012E684 /* ViewController.swift in Sources */,
+				A37050432CD215A100C8E163 /* FinancePopularChartView.swift in Sources */,
+				A36347C02CD8D3C0003B5322 /* RecommendedApp.swift in Sources */,
+				A3730B032CD085E90075016D /* GameViewController.swift in Sources */,
+				A3730AFF2CD0810F0075016D /* AppViewController.swift in Sources */,
+				A3730B072CD086230075016D /* SearchViewController.swift in Sources */,
+				A3730B012CD085A00075016D /* TodayViewController.swift in Sources */,
+				A37050452CD21A2D00C8E163 /* FinancePopularChartTableViewCell.swift in Sources */,
+				A3730B052CD086090075016D /* ArcadeViewController.swift in Sources */,
+				A36347B82CD8CAA2003B5322 /* FinanceCollectionViewCell.swift in Sources */,
+				A36347BA2CD8CB41003B5322 /* App.swift in Sources */,
+				A35A68B62CD14EB300F955A2 /* FinanceHeaderView.swift in Sources */,
+				A35A68B82CD1549E00F955A2 /* UIStackView+.swift in Sources */,
+				A35A68A82CD0E96D00F955A2 /* FinanceRecommendedCollectionViewCell.swift in Sources */,
+				A37050472CD21C6300C8E163 /* FinancePopularChartModel.swift in Sources */,
+				A37050412CD20FC700C8E163 /* FinancePopularChartViewController.swift in Sources */,
 				A3042BB12CB802100012E684 /* AppDelegate.swift in Sources */,
+				A35A68AE2CD1182800F955A2 /* FinanceCompositionalFactory.swift in Sources */,
+				A35A68B02CD11B7900F955A2 /* FinanceAppView.swift in Sources */,
+				A3730B0E2CD08E9C0075016D /* UIView+.swift in Sources */,
+				A3730AFD2CD070CF0075016D /* MainTabBarController.swift in Sources */,
+				A36347BC2CD8CBDA003B5322 /* FinanceAppModel.swift in Sources */,
 				A3042BB32CB802100012E684 /* SceneDelegate.swift in Sources */,
+				A3730B102CD08F480075016D /* FinanceAppViewController.swift in Sources */,
+				A370503F2CD20B2300C8E163 /* DownloadState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +470,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U4M8QWP7V2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "35th-Sopt-Seminar/Info.plist";
+				INFOPLIST_FILE = "35th-Sopt-Seminar/Resource/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -322,7 +498,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U4M8QWP7V2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "35th-Sopt-Seminar/Info.plist";
+				INFOPLIST_FILE = "35th-Sopt-Seminar/Resource/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -363,6 +539,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A3042BCC2CB80CD80012E684 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		A3042BCF2CB80CDF0012E684 /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A3042BCD2CB80CD80012E684 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A3042BCC2CB80CD80012E684 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		A3042BD02CB80CDF0012E684 /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A3042BCF2CB80CDF0012E684 /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A3042BA52CB8020F0012E684 /* Project object */;
 }
