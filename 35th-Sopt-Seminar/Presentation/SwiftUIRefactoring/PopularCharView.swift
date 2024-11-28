@@ -11,13 +11,9 @@ struct PopularChartView: View {
     let popularAppList = PopularApp.popularAppList
     
     var body: some View {
-        NavigationView {
-            List(popularAppList) { popularApp in
-                PopularCharViewCell(popularApp: popularApp)
-                    .listRowInsets(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
-            }
-            .navigationBarTitle("인기 차트", displayMode: .large)
-            .navigationBarTitleDisplayMode(.automatic)
+        List(popularAppList) { popularApp in
+            PopularCharViewCell(popularApp: popularApp)
+                .listRowInsets(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
         }
         .listStyle(.plain)
         .scrollContentBackground(.hidden)
