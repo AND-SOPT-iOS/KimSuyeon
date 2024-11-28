@@ -11,15 +11,18 @@ struct PopularChartView: View {
     let popularAppList = PopularApp.popularAppList
     
     var body: some View {
-        List(popularAppList) { popularApp in
-            PopularCharViewCell(popularApp: popularApp)
-                .listRowInsets(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
+        NavigationView {
+            List(popularAppList) { popularApp in
+                PopularCharViewCell(popularApp: popularApp)
+                    .listRowInsets(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
+            }
+            .navigationBarTitle("인기 차트", displayMode: .large)
+            .navigationBarTitleDisplayMode(.automatic)
         }
         .listStyle(.plain)
         .scrollContentBackground(.hidden)
         .scrollIndicators(.hidden)
         .background(Color.white)
-        .padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20))
     }
 }
 
@@ -33,6 +36,7 @@ struct PopularCharViewCell: View {
             Spacer()
             downloadButton
         }
+        .padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20))
     }
     
     var appImage: some View {
