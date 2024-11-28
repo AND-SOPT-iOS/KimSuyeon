@@ -137,8 +137,6 @@ extension FinanceAppViewController: UICollectionViewDataSource {
                     let popularChartView = PopularChartView()
                     let hostingController = UIHostingController(rootView: popularChartView)
                     self?.navigationController?.pushViewController(hostingController, animated: true)
-//                    let viewController = FinancePopularChartViewController()
-//                    self?.navigationController?.pushViewController(viewController, animated: true)
                 }
                 return header
             case 3:
@@ -152,8 +150,6 @@ extension FinanceAppViewController: UICollectionViewDataSource {
                     let popularChartView = PopularChartView()
                     let hostingController = UIHostingController(rootView: popularChartView)
                     self?.navigationController?.pushViewController(hostingController, animated: true)
-//                    let viewController = FinancePopularChartViewController()
-//                    self?.navigationController?.pushViewController(viewController, animated: true)
                 }
                 return header
             default:
