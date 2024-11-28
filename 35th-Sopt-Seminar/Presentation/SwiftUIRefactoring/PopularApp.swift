@@ -58,7 +58,7 @@ extension PopularApp {
             ranking: 6,
             title: "KB Pay",
             subtitle: "모든 금융을 한번에, 한손에, 한눈에 담다",
-            downloadState: .download
+            downloadState: .paid(price: 2200)
         ),
         PopularApp(
             appImage: Image(.imgKbank),
@@ -135,7 +135,7 @@ extension PopularApp {
             ranking: 17,
             title: "V3 Mobile Plus",
             subtitle: "코스콤 통합인증 / 알림장 메시지 서비스",
-            downloadState: .download
+            downloadState: .paid(price: 14000)
         ),
         PopularApp(
             appImage: Image(.imgHyundaiCard),

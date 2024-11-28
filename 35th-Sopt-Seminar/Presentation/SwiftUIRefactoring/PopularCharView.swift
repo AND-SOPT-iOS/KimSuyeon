@@ -15,6 +15,7 @@ struct PopularChartView: View {
             PopularCharViewCell(popularApp: popularApp)
                 .listRowInsets(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
         }
+        .navigationTitle("인기차트")
         .listStyle(.plain)
         .scrollContentBackground(.hidden)
         .scrollIndicators(.hidden)
@@ -78,13 +79,41 @@ struct PopularCharViewCell: View {
         Button {
             
         } label: {
-            Text("받기")
-                .foregroundStyle(.blue)
-                .font(.system(size: 16, weight: .bold))
+            Text(downloadButtonTitle)
+                .foregroundStyle(Color(.systemBlue))
+                .font(downloadButtonFont)
         }
         .frame(width: 80, height: 32)
         .background(Color(.systemGray6))
         .cornerRadius(16)
+    }
+    
+    var downloadButtonTitle: String {
+        switch popularApp.downloadState {
+        case .installed:
+            return "열기"
+        case .update:
+            return "업데이트"
+        case .download:
+            return "받기"
+        case .paid(let price):
+            return "₩\(formatPrice(price))"
+        }
+    }
+    
+    var downloadButtonFont: Font {
+        switch popularApp.downloadState {
+        case .paid(_):
+            return .system(size: 14, weight: .bold)
+        default:
+            return .system(size: 16, weight: .bold)
+        }
+    }
+    
+    func formatPrice(_ price: Int) -> String {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        return formatter.string(from: NSNumber(value: price)) ?? "\(price)"
     }
 }
 
