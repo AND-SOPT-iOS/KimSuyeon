@@ -116,7 +116,3 @@ struct PopularCharViewCell: View {
         return formatter.string(from: NSNumber(value: price)) ?? "\(price)"
     }
 }
-
-#Preview {
-    PopularChartView()
-}
