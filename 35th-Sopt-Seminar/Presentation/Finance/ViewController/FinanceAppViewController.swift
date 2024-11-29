@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 import SnapKit
 import Then
 
@@ -133,8 +134,9 @@ extension FinanceAppViewController: UICollectionViewDataSource {
                 ) as? FinanceHeaderView else { return UICollectionReusableView() }
                 header.configureHeader(title: "유료 순위", subtitle: nil)
                 header.didTapTotalLabel = { [weak self] in
-                    let viewController = FinancePopularChartViewController()
-                    self?.navigationController?.pushViewController(viewController, animated: true)
+                    let popularChartView = PopularChartView()
+                    let hostingController = UIHostingController(rootView: popularChartView)
+                    self?.navigationController?.pushViewController(hostingController, animated: true)
                 }
                 return header
             case 3:
@@ -145,8 +147,9 @@ extension FinanceAppViewController: UICollectionViewDataSource {
                 ) as? FinanceHeaderView else { return UICollectionReusableView() }
                 header.configureHeader(title: "무료 순위", subtitle: nil)
                 header.didTapTotalLabel = { [weak self] in
-                    let viewController = FinancePopularChartViewController()
-                    self?.navigationController?.pushViewController(viewController, animated: true)
+                    let popularChartView = PopularChartView()
+                    let hostingController = UIHostingController(rootView: popularChartView)
+                    self?.navigationController?.pushViewController(hostingController, animated: true)
                 }
                 return header
             default:
