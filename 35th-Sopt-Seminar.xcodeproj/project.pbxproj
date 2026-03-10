@@ -36,6 +36,8 @@
 		A3730B072CD086230075016D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3730B062CD086230075016D /* SearchViewController.swift */; };
 		A3730B0E2CD08E9C0075016D /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3730B0D2CD08E9C0075016D /* UIView+.swift */; };
 		A3730B102CD08F480075016D /* FinanceAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3730B0F2CD08F480075016D /* FinanceAppViewController.swift */; };
+		A3ED0AF92CF833C50074B07A /* PopularApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3ED0AF82CF833C50074B07A /* PopularApp.swift */; };
+		A3ED0AFB2CF835F00074B07A /* PopularCharView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3ED0AFA2CF835F00074B07A /* PopularCharView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +70,8 @@
 		A3730B062CD086230075016D /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		A3730B0D2CD08E9C0075016D /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIView+.swift"; path = "35th-Sopt-Seminar/Resource/Extension/UIView+.swift"; sourceTree = SOURCE_ROOT; };
 		A3730B0F2CD08F480075016D /* FinanceAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceAppViewController.swift; sourceTree = "<group>"; };
+		A3ED0AF82CF833C50074B07A /* PopularApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularApp.swift; sourceTree = "<group>"; };
+		A3ED0AFA2CF835F00074B07A /* PopularCharView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularCharView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +205,7 @@
 				A35A68C12CD1776200F955A2 /* Core */,
 				A35A68A52CD0BBC200F955A2 /* Menu */,
 				A35A68C22CD1776F00F955A2 /* Finance */,
+				A3ED0AF52CF833230074B07A /* SwiftUIRefactoring */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -212,6 +217,15 @@
 				A35A68B72CD1549E00F955A2 /* UIStackView+.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		A3ED0AF52CF833230074B07A /* SwiftUIRefactoring */ = {
+			isa = PBXGroup;
+			children = (
+				A3ED0AFA2CF835F00074B07A /* PopularCharView.swift */,
+				A3ED0AF82CF833C50074B07A /* PopularApp.swift */,
+			);
+			path = SwiftUIRefactoring;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,6 +312,7 @@
 				A3730B032CD085E90075016D /* GameViewController.swift in Sources */,
 				A3730AFF2CD0810F0075016D /* AppViewController.swift in Sources */,
 				A3730B072CD086230075016D /* SearchViewController.swift in Sources */,
+				A3ED0AFB2CF835F00074B07A /* PopularCharView.swift in Sources */,
 				A3730B012CD085A00075016D /* TodayViewController.swift in Sources */,
 				A37050452CD21A2D00C8E163 /* FinancePopularChartTableViewCell.swift in Sources */,
 				A3730B052CD086090075016D /* ArcadeViewController.swift in Sources */,
@@ -315,6 +330,7 @@
 				A3730AFD2CD070CF0075016D /* MainTabBarController.swift in Sources */,
 				A36347BC2CD8CBDA003B5322 /* FinanceAppModel.swift in Sources */,
 				A3042BB32CB802100012E684 /* SceneDelegate.swift in Sources */,
+				A3ED0AF92CF833C50074B07A /* PopularApp.swift in Sources */,
 				A3730B102CD08F480075016D /* FinanceAppViewController.swift in Sources */,
 				A370503F2CD20B2300C8E163 /* DownloadState.swift in Sources */,
 			);
